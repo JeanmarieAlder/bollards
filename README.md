@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Bollards - a border bollards experience
+
+## Context
+This web app has been designed to help during my mission of going across all border bollards between Vaud, Switzerland and France. 
+I needed a platform where I could simply store and nicely display all bollards during my journey. I also like React and web app development, that's why.
+
+## Getting Started with Create React App
+
+<details>
+  <summary>Click to know more about react.</summary>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +77,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+</details>
