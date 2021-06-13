@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import BollardCard from './list/BollardCard';
+import { bollards } from './list/bollards'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className='content-div'>
+      <BollardCard bollard={bollards[0]} />
+      <BollardCard bollard={bollards[1]} />
+      <BollardCard bollard={bollards[2]} />
+      <BollardCard bollard={bollards[3]} />
+      <BollardCard bollard={bollards[4]} />
+      <BollardCard bollard={bollards[5]} />
+    </div>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
