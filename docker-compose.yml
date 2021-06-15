@@ -1,0 +1,25 @@
+version: '3.2'
+
+networks:
+  web:
+    external: true
+  internal:
+    external: false
+
+services:
+
+  nginx:
+    volumes:
+      - "./bollards:/bollards"
+    build:
+      context: ./bollards
+      dockerfile: Dockerfile
+    networks:
+      - internal
+      - web
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.backend=bollards
+      - traefik.frontend.rule=Host:bollards.wakxy.rocks
+      - traefik.docker.network=web

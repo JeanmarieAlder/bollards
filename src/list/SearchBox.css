@@ -1,0 +1,20 @@
+.search-box-div{
+    padding: 2px;
+    text-align: center;
+}
+
+input[type=search]{
+    border: 2px solid #096e0041;
+    border-radius: 4px;
+    font-size: 24pt;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #096e0041;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #096e0041;
+    opacity: 1; /* Firefox */
+}

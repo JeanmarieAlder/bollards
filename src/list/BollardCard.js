@@ -2,8 +2,7 @@ import React from 'react';
 import imageDefault from '../img/logo.jpeg';
 import './BollardCard.css';
 
-const BollardCard = (props) => {
-    var bollard = props.bollard;
+const BollardCard = ({bollard}) => {
     return (
         <div className='bollard-card-div'>
             <img className='img-preview' alt='bollard' src={imageDefault} />
