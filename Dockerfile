@@ -1,5 +1,5 @@
 ## Node part
-FROM node:14.16.0-alpine as build-stage
+FROM node:16.7-alpine as build-stage
 
 COPY . /bollards
 
