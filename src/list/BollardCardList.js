@@ -5,11 +5,11 @@ import './BollardCardList.css';
 
 const BollardCardList = ({bollards}) => {
     return (
-        <div className='bollard-card-list-div'>
+        <div className='p-5 card-container row text-center justify-content-center'>
             {
                 bollards.map((bollard, i) => {
                     return (
-                        <BollardCard key={i} bollard={bollards[i]} />
+                        <BollardCard key={bollards[i].id} bollard={bollards[i]} />
                     );
                 } )
             }
