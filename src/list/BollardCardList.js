@@ -7,7 +7,8 @@ const BollardCardList = ({bollards}) => {
     return (
         <div className='p-5 card-container row text-center justify-content-center'>
             {
-                bollards.map((bollard, i) => {
+                bollards.sort((a, b) => a.b_number - b.b_number)
+                .map((bollard, i) => {
                     return (
                         <BollardCard key={bollards[i].id} bollard={bollards[i]} />
                     );
