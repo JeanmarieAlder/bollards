@@ -12,7 +12,7 @@ function App() {
         async function fetchData() {
             let h = new Headers();
             h.append('Accept', 'application/json');
-            var res = await fetch('http://localhost:5000/api/v1/bollards/list', {headers: h});
+            var res = await fetch('https://bollards-api.ch/api/v1/bollards/list', {headers: h});
             var resJson = await res.json();
             setbollardsList(resJson);
         };
