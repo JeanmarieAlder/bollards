@@ -9,14 +9,17 @@ function BollardCardListFiltered({bollards}) {
                     (
                         <div>
                             <h2>By number:</h2>
-                            {
-                                bollards[0].sort((a,b) => a.b_number - b.b_number)
-                                .map((bollard, i) => {
-                                    return (
-                                        <BollardCard key={i} bollard={bollard} />
-                                    );
-                                } )
-                            }
+                            <div className="p-5 card-container row text-center justify-content-center">
+                                {
+                                    bollards[0].sort((a,b) => a.b_number - b.b_number)
+                                    .map((bollard, i) => {
+                                        return (
+                                            <BollardCard key={i} bollard={bollard} />
+                                        );
+                                    } )
+                                }
+                            </div>
+                            
                         </div>
                     ) :
                     null
@@ -26,14 +29,16 @@ function BollardCardListFiltered({bollards}) {
                     (
                         <div>
                             <h2>By name:</h2>
-                            {
-                                bollards[1].sort((a,b) => a.b_number - b.b_number)
-                                .map((bollard, i) => {
-                                    return (
-                                        <BollardCard key={i} bollard={bollard} />
-                                    );
-                                } )
-                            }
+                            <div className="p-5 card-container row text-center justify-content-center">
+                                {
+                                    bollards[1].sort((a,b) => a.b_number - b.b_number)
+                                    .map((bollard, i) => {
+                                        return (
+                                            <BollardCard key={i} bollard={bollard} />
+                                        );
+                                    } )
+                                }
+                            </div>
                         </div>
                     ) :
                     null
