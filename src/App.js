@@ -31,17 +31,12 @@ function App() {
         //look for numbers first, then name, then comment
         filteredBollards[0] = bollardsList.filter(bollard => {
             return (
-                bollard.number.toLowerCase().includes(searchField.toLowerCase())
+                (bollard.b_number + bollard.b_letter).toLowerCase().includes(searchField.toLowerCase())
             );
         });
         filteredBollards[1] = bollardsList.filter(bollard => {
             return (
-                bollard.name.toLowerCase().includes(searchField.toLowerCase())
-            );
-        });
-        filteredBollards[2] = bollardsList.filter(bollard => {
-            return (
-                bollard.comment.toLowerCase().includes(searchField.toLowerCase())
+                bollard.b_name.toLowerCase().includes(searchField.toLowerCase())
             );
         });
     }
