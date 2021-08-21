@@ -10,7 +10,8 @@ function BollardCardListFiltered({bollards}) {
                         <div>
                             <h2>By number:</h2>
                             {
-                                bollards[0].map((bollard, i) => {
+                                bollards[0].sort((a,b) => a.b_number - b.b_number)
+                                .map((bollard, i) => {
                                     return (
                                         <BollardCard key={i} bollard={bollard} />
                                     );
@@ -26,23 +27,8 @@ function BollardCardListFiltered({bollards}) {
                         <div>
                             <h2>By name:</h2>
                             {
-                                bollards[1].map((bollard, i) => {
-                                    return (
-                                        <BollardCard key={i} bollard={bollard} />
-                                    );
-                                } )
-                            }
-                        </div>
-                    ) :
-                    null
-            }
-            {
-                bollards[2].length > 0 ?
-                    (
-                        <div>
-                            <h2>By comment:</h2>
-                            {
-                                bollards[2].map((bollard, i) => {
+                                bollards[1].sort((a,b) => a.b_number - b.b_number)
+                                .map((bollard, i) => {
                                     return (
                                         <BollardCard key={i} bollard={bollard} />
                                     );
