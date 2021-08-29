@@ -1,5 +1,6 @@
 .bollard-card {
-    width: 258px; 
+    width: 258px;
+    max-width: 258px; 
     padding: 3px;
     margin: 5px;
   }
