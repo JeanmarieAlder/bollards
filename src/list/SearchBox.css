@@ -1,5 +1,6 @@
 .search-box-div{
     margin-top: 65px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -7,7 +8,7 @@ input[type=search]{
     border: 2px solid #096e0041;
     border-radius: 4px;
     font-size: 24pt;
-    max-width: 350px;
+    max-width: 300px;
 }
 
 input:focus {

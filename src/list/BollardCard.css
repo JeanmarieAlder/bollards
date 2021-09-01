@@ -1,8 +1,17 @@
 .bollard-card {
-    width: 258px;
-    max-width: 258px; 
+    width: 129px;
+    max-width: 129px; 
     padding: 3px;
     margin: 5px;
+  }
+
+  @media (min-width: 768px) {
+    .bollard-card {
+      width: 258px;
+      max-width: 258px; 
+      padding: 3px;
+      margin: 5px;
+    }
   }
 
   .img-loading-div {
