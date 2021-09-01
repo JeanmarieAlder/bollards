@@ -18,8 +18,8 @@ const Header = () => {
                             
                         </div>
                         <div className="navbar-nav">
-                            <a className="nav-link disabled" href="/home" tabindex="-1" aria-disabled="true">About</a>
-                            <a className="nav-link disabled" href="/home" tabindex="-1" aria-disabled="true">Contact</a>
+                            <a className="nav-link disabled" href="/home" tabIndex="-1" aria-disabled="true">About</a>
+                            <a className="nav-link disabled" href="/home" tabIndex="-1" aria-disabled="true">Contact</a>
                         </div>
                     </div>
                 </div>
