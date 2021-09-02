@@ -8,8 +8,8 @@ function BollardCardListFiltered({bollards}) {
                 bollards[0].length > 0 ?
                     (
                         <div>
-                            <h2>By number:</h2>
-                            <div className="p-5 card-container row text-center justify-content-center">
+                            <h2 className='search-result-title'>By number:</h2>
+                            <div className="p-2 card-container row text-center justify-content-center">
                                 {
                                     bollards[0].sort((a,b) => a.b_number - b.b_number)
                                     .map((bollard, i) => {
@@ -28,8 +28,8 @@ function BollardCardListFiltered({bollards}) {
                 bollards[1].length > 0 ?
                     (
                         <div>
-                            <h2>By name:</h2>
-                            <div className="p-5 card-container row text-center justify-content-center">
+                            <h2 className='search-result-title'>By name:</h2>
+                            <div className="p-2 card-container row text-center justify-content-center">
                                 {
                                     bollards[1].sort((a,b) => a.b_number - b.b_number)
                                     .map((bollard, i) => {

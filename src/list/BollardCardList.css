@@ -1,3 +1,9 @@
 .bollard-card-list-div{
     text-align: center;
 }
+
+.search-result-title {
+    font-family: 'Kalam';
+    font-weight: 700;
+    text-align: center;
+}
