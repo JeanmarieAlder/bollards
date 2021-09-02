@@ -7,6 +7,21 @@
   justify-content: center;
 }
 
+.card {
+  height: 100%;
+}
+
+.card-title {
+  font-family: 'Kalam';
+  font-weight: 700;
+}
+
+.card-text {
+  font-family: 'Kalam';
+  font-weight: 400;
+  font-size: 20px;
+}
+
 .bollard-card {
   max-width: 262px;
   padding: 5px;
