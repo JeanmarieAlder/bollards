@@ -4,6 +4,12 @@
 This web app has been designed to help during my mission of going across all border bollards between Vaud, Switzerland and France. 
 I needed a platform where I could simply store and nicely display all bollards during my journey. I also like React and web app development, that's why.
 
+## Deployment notice
+
+### Global Configuration
+Make sure you set the following variables in json format on the file src/Config.js file (create it using Config.example.js)
+
+
 ## Getting Started with Create React App
 
 <details>

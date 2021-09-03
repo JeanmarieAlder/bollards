@@ -3,20 +3,15 @@ import BollardCardList from './list/BollardCardList';
 import BollardCardListFiltered from './list/BollardCardListFiltered';
 import Header from './Header';
 import SearchBox from './list/SearchBox';
+import { fetchDataApi } from './utils/FetchData';
 
 function App() {
     const [bollardsList, setbollardsList] = useState([]);
     const [searchField, setSearchField] = useState('');
 
+
     useEffect(() => {
-        async function fetchData() {
-            let h = new Headers();
-            h.append('Accept', 'application/json');
-            var res = await fetch('https://bollards-api.ch/api/v1/bollards/list', {headers: h});
-            var resJson = await res.json();
-            setbollardsList(resJson);
-        };
-        fetchData();
+        fetchDataApi('bollards/list', setbollardsList);
     }, [])
 
     const onSearchInput = (event) => {
@@ -42,7 +37,7 @@ function App() {
     }
 
     return (
-        <div>
+        <div className='main-div'>
             <Header></Header>
             <main role="main" className="container">
                 <SearchBox onSearchInput={onSearchInput}/>
