@@ -1,0 +1,4 @@
+.map-page-div {
+    border: 1px solid red;
+    height: calc(100vh - 56px);
+}

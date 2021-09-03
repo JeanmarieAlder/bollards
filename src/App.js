@@ -1,49 +1,18 @@
-import React, {useState, useEffect} from 'react';
-import BollardCardList from './list/BollardCardList';
-import BollardCardListFiltered from './list/BollardCardListFiltered';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Header from './Header';
-import SearchBox from './list/SearchBox';
-import { fetchDataApi } from './utils/FetchData';
+import HomePage from './pages/HomePage';
+import MapPage from './pages/MapPage';
 
 function App() {
-    const [bollardsList, setbollardsList] = useState([]);
-    const [searchField, setSearchField] = useState('');
-
-
-    useEffect(() => {
-        fetchDataApi('bollards/list', setbollardsList);
-    }, [])
-
-    const onSearchInput = (event) => {
-        const searchValue = event.target.value;
-        setSearchField(searchValue);
-    };
-    const filtered = searchField !== '';
-    console.log(filtered);
-    let filteredBollards = [];
-
-    if(filtered){
-        //look for numbers first, then name, then comment
-        filteredBollards[0] = bollardsList.filter(bollard => {
-            return (
-                (bollard.b_number + bollard.b_letter).toLowerCase().includes(searchField.toLowerCase())
-            );
-        });
-        filteredBollards[1] = bollardsList.filter(bollard => {
-            return (
-                bollard.b_name.toLowerCase().includes(searchField.toLowerCase())
-            );
-        });
-    }
-
     return (
         <div className='main-div'>
             <Header></Header>
             <main role="main" className="container">
-                <SearchBox onSearchInput={onSearchInput}/>
-                {
-                    filtered ? <BollardCardListFiltered bollards={filteredBollards} /> : <BollardCardList bollards={bollardsList} />
-                }
+                <Switch>
+                    <Route path='/map' component={MapPage} />
+                    <Route path={['/home', '/list', '/']} component={HomePage} />
+                </Switch>
             </main>
             
         </div>

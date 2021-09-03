@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Header.css';
 
@@ -7,15 +8,15 @@ const Header = () => {
             <header className='site-header'>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                     <div className="container-fluid">
-                        <a className="navbar-brand mr-3" href="/home">Bollards.ch</a>
+                        <Link className="navbar-brand mr-3" to="/home">Bollards.ch</Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav mx-auto">
-                                <a className="nav-link active" aria-current="page" href="/home">List</a>
-                                <a className="nav-link disabled" href="/home">Map</a>
-                                <a className="nav-link disabled" href="/home">News</a>
+                                <Link className="nav-link active" aria-current="page" to="/list">List</Link>
+                                <Link className="nav-link active" to="/map">Map</Link>
+                                <Link className="nav-link active" to="/news">News</Link>
                                 
                             </div>
                             <div className="navbar-nav">

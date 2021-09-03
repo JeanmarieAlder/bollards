@@ -7,8 +7,7 @@ I needed a platform where I could simply store and nicely display all bollards d
 ## Deployment notice
 
 ### Global Configuration
-Make sure you set the following variables in json format on the file src/Config.js file (create it using Config.example.js)
-
+Make sure you create the src/Config.js file (using Config.example.js)
 
 ## Getting Started with Create React App
 
