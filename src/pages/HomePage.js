@@ -6,11 +6,11 @@ import { fetchDataApi } from '../utils/FetchData';
 
 const HomePage = () => {
 
-    const [bollardsList, setbollardsList] = useState([]);
+    const [bollardsList, setBollardsList] = useState([]);
     const [searchField, setSearchField] = useState('');
 
     useEffect(() => {
-        fetchDataApi('bollards/list', setbollardsList);
+        fetchDataApi('bollards/list', setBollardsList);
     }, [])
 
     const onSearchInput = (event) => {

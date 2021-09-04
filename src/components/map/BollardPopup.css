@@ -1,0 +1,18 @@
+
+.popup-image-div {
+    height: 125px;
+    max-height: 125px;
+    text-align: center;
+}
+
+.popup-image {
+    height: 100%;
+}
+
+.popup-number {
+    text-align: center;
+}
+
+.popup-name {
+    text-align: center;
+}
