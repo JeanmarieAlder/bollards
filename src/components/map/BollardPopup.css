@@ -1,7 +1,9 @@
 
 .popup-image-div {
     height: 125px;
+    width: 125px;
     max-height: 125px;
+    max-width: 125px;
     text-align: center;
 }
 

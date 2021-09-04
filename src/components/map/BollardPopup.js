@@ -1,10 +1,11 @@
 import React from 'react'
 import { Popup } from 'react-leaflet'
 import { Link } from 'react-router-dom'
+import Config from '../../Config'
 
 import './BollardPopup.css'
 
-const BollardPopup = ({clicked, b_number, b_letter, b_name}) => {
+const BollardPopup = ({clicked, b_number, b_letter, b_name, image_icon}) => {
     return (
         <Popup>
             <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -14,7 +15,7 @@ const BollardPopup = ({clicked, b_number, b_letter, b_name}) => {
                             clicked ? (
                                 <img
                                     className='popup-image'
-                                    src='https://bollards.ch/static/img/bollards_icon/e29b594d3a24e099.jpg'
+                                    src={`${Config.STATIC_FILES_URL}/static/img/bollards_icon/${image_icon}`}
                                     alt='bollard'
                                 ></img>
                             ) : null
