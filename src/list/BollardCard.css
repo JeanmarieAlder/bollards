@@ -7,6 +7,10 @@
   justify-content: center;
 }
 
+.img-preview {
+  height: auto;
+}
+
 .card {
   height: 100%;
 }
