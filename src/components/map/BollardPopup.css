@@ -2,8 +2,6 @@
 .popup-image-div {
     height: 125px;
     width: 125px;
-    max-height: 125px;
-    max-width: 125px;
     text-align: center;
 }
 
@@ -13,8 +11,21 @@
 
 .popup-number {
     text-align: center;
+    font-weight: bolder;
+}
+
+h2 {
+    font-weight: 700;
 }
 
 .popup-name {
     text-align: center;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .popup-image-div {
+        width: 250px;
+        height: 250px;
+    }
 }

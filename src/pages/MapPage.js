@@ -12,7 +12,7 @@ const MapPage = () => {
     }, [])
     return (
         <div>
-            <MapContainer className='map-page-div' center={[46.64692, 6.28342]} zoom={13}>
+            <MapContainer className='map-page-div' center={[46.586, 6.26]} zoom={10} >
                 <TileLayer
                     attribution='&copy; <a href="https://www.geo.admin.ch/en/about-swiss-geoportal/impressum.html#copyright">geo.admin.ch</a> contributors'
                     url="https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg"

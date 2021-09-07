@@ -18,7 +18,8 @@ const BollardMarker = ({bollard}) => {
             }}
         >
             <BollardPopup 
-                clicked={clicked} 
+                clicked={clicked}
+                id={bollard.id}
                 b_number={bollard.b_number} 
                 b_letter={bollard.b_letter} 
                 b_name={bollard.b_name}

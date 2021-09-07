@@ -5,10 +5,10 @@ import Config from '../../Config'
 
 import './BollardPopup.css'
 
-const BollardPopup = ({clicked, b_number, b_letter, b_name, image_icon}) => {
+const BollardPopup = ({clicked, id, b_number, b_letter, b_name, image_icon}) => {
     return (
         <Popup>
-            <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link to={`/details/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <span>
                     <div className='popup-image-div'>
                         {

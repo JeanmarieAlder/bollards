@@ -1,0 +1,77 @@
+
+.details-page-div {
+}
+
+.details-logo-div {
+    height: 150px;
+    text-align: center;
+}
+
+.details-logo {
+    height: 150px;
+    border-radius: 50px;
+}
+
+.details-title {
+    height: auto;
+    text-align: center;
+    align-content: center;
+    display: grid;
+}
+
+.details-content {
+    text-align: center;
+}
+
+.details-comment {
+    text-align: justify;
+}
+
+.details-map-div {
+    height: 300px;
+}
+
+.details-map {
+    height: 100%;
+    width: 100%;
+}
+
+.details-images {
+    margin-top: 10px;
+    height: calc(100vh - 56px);
+}
+
+.bollard-loading-div {
+    text-align: center;
+    height: 100px;
+}
+
+.spinner-grow {
+    height: 100px;
+    width: 100px;
+}
+
+@media (min-width: 768px) {
+    .details-logo-div {
+        height: 250px;
+        text-align: right;
+    }
+
+    .details-logo {
+        height: 250px;
+        border-radius: 90px;
+    }
+
+    .details-title {
+        height: 250px;
+        text-align: left;
+    }
+    .details-content {
+        height: 300px;
+        text-align: right;
+    }
+
+    .details-comment {
+        direction: rtl;
+    }
+}
