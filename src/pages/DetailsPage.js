@@ -45,7 +45,7 @@ const DetailsPage = () => {
                         <Marker position={[bollard.b_lat, bollard.b_lng]}></Marker>
                     </MapContainer>
                 </div>
-                <div className='details-images col-12'>
+                <div className='details-images'>
                     <ImageCarousel images={bollard.images}></ImageCarousel>
                 </div>
             </div>
