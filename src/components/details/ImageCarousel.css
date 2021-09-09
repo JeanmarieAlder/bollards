@@ -1,6 +1,7 @@
 .carousel-image-div {
     background-color: #e1ede3;
     border-radius: 15px;
+    overflow: hidden;
     max-width: 100%;
     max-height: calc(100vh - 60px);
 }

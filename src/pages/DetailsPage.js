@@ -26,7 +26,7 @@ const DetailsPage = () => {
                     <h4>{bollard.b_name}</h4>
                 </div>
                 <div className='details-content col-md-6'>
-                    <h5>Type: {bollard.b_type}</h5>
+                    <h5>{bollard.b_type}</h5>
                     <div className='details-comment'>
                         <p>{bollard.comment}</p>
                     </div>
