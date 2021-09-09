@@ -3,7 +3,6 @@ import Config from '../../Config';
 import './ImageCarousel.css'
 
 const ImageCarousel = ({images}) => {
-    console.log(images)
     return (
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-indicators">

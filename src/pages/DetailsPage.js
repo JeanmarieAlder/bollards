@@ -1,4 +1,5 @@
 import { MapContainer, Marker, TileLayer } from 'react-leaflet';
+import L from 'leaflet'
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Config from '../Config';
@@ -14,7 +15,6 @@ const DetailsPage = () => {
     useEffect(() => {
         fetchDataApi(`bollards/details/${bollard_id}`, setBollard);
     }, [bollard_id])
-
     return (
         bollard ? (
             <div className='details-page-div row'>
@@ -32,7 +32,12 @@ const DetailsPage = () => {
                     </div>
                 </div>
                 <div className='details-map-div col-md-6'>
-                    <MapContainer className='details-map' center={[bollard.b_lat, bollard.b_lng]} zoom={14} >
+                    <MapContainer 
+                        className='details-map' 
+                        center={[bollard.b_lat, bollard.b_lng]} 
+                        zoom={14}
+                        dragging={!L.Browser.mobile}
+                        tap={!L.Browser.mobile} >
                         <TileLayer
                             attribution='&copy; <a href="https://www.geo.admin.ch/en/about-swiss-geoportal/impressum.html#copyright">geo.admin.ch</a> contributors'
                             url="https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg"
