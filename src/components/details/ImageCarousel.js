@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Config from '../../Config';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import './ImageCarousel.css'
+import './ImageCarousel.css';
 
 const ImageCarousel = ({images}) => {
     return (
@@ -17,7 +17,7 @@ const ImageCarousel = ({images}) => {
             {
                 images.map((img, i) => {
                     return (
-                        <div className={'carousel-image-div'}>
+                        <div key={i} className={'carousel-image-div'}>
                             <img className={'carousel-image'} src={`${Config.STATIC_FILES_URL}/static/img/bollards/${img}`} alt='bollard' />
                         </div>
                     )

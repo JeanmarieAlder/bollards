@@ -1,42 +1,46 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 import './Header.css';
 
 const Header = () => {
-    const [collapseClass, setCollapseClass] = useState(false) //collapse or show
-    const hideHeader = () => {
-        setCollapseClass(!collapseClass);
-    };
-    const hideHeaderBrand = () => {
-        setCollapseClass(false);
-    }
-    
+    const [expanded, setExpanded] = useState(false);
     return (
-            <header className='site-header'>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                    <div className="container-fluid">
-                        <Link className="navbar-brand mr-3" to="/home" onClick={hideHeaderBrand}>Bollards.ch</Link>
-                        <button className="navbar-toggler" type="button" onClick={hideHeader} data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded={collapseClass} aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className={`navbar-collapse collapse ${collapseClass ? 'show' : ''}`} id="navbarNavAltMarkup" onClick={hideHeader}>
-                            <div className="navbar-nav mx-auto" >
-                                <Link className="nav-link active" aria-current="page" to="/list">List</Link>
-                                <Link className="nav-link active" to="/map">Map</Link>
-                                <Link className="nav-link active" to="/news">News</Link>
-                                
-                            </div>
-                            <div className="navbar-nav">
-                                <a className="nav-link disabled" href="/home" tabIndex="-1" aria-disabled="true">About</a>
-                                <a className="nav-link disabled" href="/home" tabIndex="-1" aria-disabled="true">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-            
-    );
+        <Navbar bg="light" expand="lg" expanded={expanded}>
+            <Container>
+                <LinkContainer to="/home" onClick={() => setExpanded(false)}>
+                    <Navbar.Brand>bollards.ch</Navbar.Brand>
+                </LinkContainer>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
+                <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                    <LinkContainer to="/list" onClick={() => setExpanded(false)}>
+                        <Nav.Link>List</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/map" onClick={() => setExpanded(false)}>
+                        <Nav.Link>Map</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/news" onClick={() => setExpanded(false)}>
+                        <Nav.Link>News</Nav.Link>
+                    </LinkContainer>                 
+                </Nav>
+                <Nav className="justify-content-end">
+                    <LinkContainer to="/about" onClick={() => setExpanded(false)}>
+                            <Nav.Link disabled>About</Nav.Link>
+                    </LinkContainer> 
+                    <LinkContainer to="/contact" onClick={() => setExpanded(false)}>
+                        <Nav.Link disabled>Contact</Nav.Link>
+                    </LinkContainer> 
+                    <NavDropdown title="English" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#fr">Français</NavDropdown.Item>
+                        <NavDropdown.Item href="#en">English</NavDropdown.Item>
+                    </NavDropdown>
+                </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    )
 }
 
 export default Header;

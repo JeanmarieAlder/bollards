@@ -1,9 +1,11 @@
 import { Marker } from "react-leaflet"
+import * as L from "leaflet";
 import React, {useState} from 'react';
 import BollardPopup from "./BollardPopup";
 
-const BollardMarker = ({bollard}) => {
 
+const BollardMarker = ({bollard, markerIcon}) => {
+    
     const [clicked, setClicked] = useState(false);
 
     const onClickMarker = (e) => {
@@ -13,6 +15,7 @@ const BollardMarker = ({bollard}) => {
     return (
         <Marker 
             position={[bollard.b_lat, bollard.b_lng]}
+            icon={markerIcon}
             eventHandlers={{
                 click: onClickMarker
             }}
