@@ -1,5 +1,4 @@
 import { Marker } from "react-leaflet"
-import * as L from "leaflet";
 import React, {useState} from 'react';
 import BollardPopup from "./BollardPopup";
 
