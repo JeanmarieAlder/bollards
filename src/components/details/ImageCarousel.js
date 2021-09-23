@@ -7,10 +7,11 @@ import './ImageCarousel.css';
 const ImageCarousel = ({images}) => {
     return (
         <Carousel 
-            swipeable={true} 
+            swipeable={true}
+            emulateTouch={true} 
             autoPlay={true} 
             infiniteLoop={true}
-            interval={5000} 
+            interval={8000} 
             stopOnHover={false}
             >
                 
