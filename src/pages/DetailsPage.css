@@ -37,7 +37,6 @@
 
 .details-images {
     margin-top: 10px;
-    max-height: calc(100vh - 56px);
     max-width: 100%;
 }
 
