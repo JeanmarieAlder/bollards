@@ -10,8 +10,8 @@ import imgMarkerSpecial from "../../../assets/img/marker_special.png"
 const BollardIcon = L.Icon.extend({
     options: {
         iconSize:     [31, 39], // size of the icon
-        iconAnchor:   [15, 39], // point of the icon which will correspond to marker's location
-        popupAnchor:  [0, -40] // point from which the popup should open relative to the iconAnchor
+        iconAnchor:   [16, 39], // point of the icon which will correspond to marker's location
+        popupAnchor:  [0, -39] // point from which the popup should open relative to the iconAnchor
     }
   });
 
