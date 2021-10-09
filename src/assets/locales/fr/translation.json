@@ -3,5 +3,13 @@
   "s_map": "Carte",
   "s_news": "News",
   "s_about": "À Propos",
-  "s_contact": "Contact"
+  "s_contact": "Contact",
+  "s_expand": "Agrandir",
+  "s_Forest": "Forêt",
+  "s_Fields": "Champs",
+  "s_Rocky": "Rocheux",
+  "s_Custom": "Douane",
+  "s_Plain": "Plaine",
+  "s_Swamp": "Marais",
+  "s_Special": "Spécial"
 }

@@ -8,11 +8,14 @@ import './DetailsPage.css';
 import ImageCarousel from '../components/details/ImageCarousel';
 import BollardMarkerList from '../components/map/BollardMarkerList';
 import CurrentBollardMarker from '../components/details/CurrentBollardMarker';
+import CustomMapButton from '../components/details/CustomMapButton';
+import { useTranslation } from 'react-i18next';
 
 
 const DetailsPage = () => {
-    let { bollard_id } = useParams()
-    let [bollard, setBollard] = useState()
+    let { t } = useTranslation();
+    let { bollard_id } = useParams();
+    let [bollard, setBollard] = useState();
 
     useEffect(() => {
         fetchDataApi(`bollards/details/${bollard_id}`, setBollard);
@@ -26,7 +29,7 @@ const DetailsPage = () => {
                 <div className='details-title col-md-6 p-2'>
                     <h1>No {bollard.b_number}{bollard.b_letter}</h1>
                     <h4>{bollard.b_name}</h4>
-                    <h5>{bollard.b_type}</h5>
+                    <h5>{ t("s_" + bollard.b_type)}</h5>
                     <div className='details-comment'>
                         <p>{bollard.comment}</p>
                     </div>
@@ -47,6 +50,7 @@ const DetailsPage = () => {
                         />
                         <CurrentBollardMarker bollard={bollard}></CurrentBollardMarker>
                         <BollardMarkerList bollardMarkers={bollard.neighbours}></BollardMarkerList>
+                        <CustomMapButton position="topright"></CustomMapButton>
                     </MapContainer>
                 </div>
             </div>

@@ -3,5 +3,13 @@
   "s_map": "Map",
   "s_news": "News",
   "s_about": "About",
-  "s_contact": "Contact"
+  "s_contact": "Contact",
+  "s_expand": "Expand",
+  "s_Forest": "Forest",
+  "s_Fields": "Fields",
+  "s_Rocky": "Rocky",
+  "s_Custom": "Custom",
+  "s_Plain": "Plain",
+  "s_Swamp": "Swamp",
+  "s_Special": "Special"
 }

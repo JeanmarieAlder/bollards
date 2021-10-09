@@ -4,12 +4,22 @@ import * as L from 'leaflet';
 import { MapContainer, TileLayer} from 'react-leaflet'
 import { fetchDataApi } from '../utils/FetchData';
 import BollardMarkerList from '../components/map/BollardMarkerList';
+import { useLocation } from 'react-router-dom';
+
+function useQuery() {
+    return new URLSearchParams(useLocation().search);
+}
 
 const MapPage = () => {
+    let query = useQuery();
+    let mapCenter = [
+        query.get('lat') || '46.586',
+        query.get('lng') || '6.26'
+    ]
+    let mapZoom = query.get('zoom') || 10;
     const [bollardsList, setBollardsList] = useState([]);
     useEffect(() => {
         fetchDataApi('bollards/markers', setBollardsList)
-        .then((resp) => console.log(resp))
     }, [])
 
     /**
@@ -26,8 +36,8 @@ const MapPage = () => {
         <div>
             <MapContainer 
                 className='map-page-div' 
-                center={[46.586, 6.26]} 
-                zoom={10}
+                center={mapCenter} 
+                zoom={mapZoom}
                 minZoom={9}
                 maxBounds={getBounds()} >
                 <TileLayer
