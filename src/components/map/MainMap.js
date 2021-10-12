@@ -10,7 +10,6 @@ const MainMap = () => {
     const [bollardsList, setBollardsList] = useState([]);
     const [mapTileType, setMapTileType] = useState(localStorage.getItem("mapTileType") || "satellite");
 
-
     useEffect(() => {
         fetchDataApi('bollards/markers', setBollardsList)
     }, []);
@@ -20,26 +19,17 @@ const MainMap = () => {
             var typeKey;
             switch(e.name){
                 case t("s_map"):
-                    const mapKey = "map";
-                    setMapTileType(mapKey);
-                    localStorage.setItem("mapTileType", mapKey);
+                    typeKey = "map";
                     break;
                 case t("s_satellite"):
-                    const satKey = "satellite";
-                    setMapTileType(satKey);
-                    localStorage.setItem("mapTileType", satKey);
+                default:
+                    typeKey = "satellite";
                     break;
             }
+            setMapTileType(typeKey);
+            localStorage.setItem("mapTileType", typeKey);
         }
     })
-
-    /**
-     * Set the map tile style on localStorage
-     * @param {string} mapTileType 
-     */
-     const changeMapType = (mapTileType) => {
-        setMapTileType(mapTileType);
-    };
 
     return (
         <>
