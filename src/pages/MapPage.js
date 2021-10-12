@@ -1,26 +1,29 @@
-import React, { useEffect, useState } from 'react';
-import './MapPage.css';
 import * as L from 'leaflet';
-import { MapContainer, TileLayer} from 'react-leaflet'
-import { fetchDataApi } from '../utils/FetchData';
-import BollardMarkerList from '../components/map/BollardMarkerList';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { MapContainer } from 'react-leaflet';
 import { useLocation } from 'react-router-dom';
+import MainMap from '../components/map/MainMap';
+import './MapPage.css';
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);
 }
 
 const MapPage = () => {
+    let { i18n } = useTranslation();
     let query = useQuery();
     let mapCenter = [
         query.get('lat') || '46.586',
         query.get('lng') || '6.26'
     ]
     let mapZoom = query.get('zoom') || 10;
-    const [bollardsList, setBollardsList] = useState([]);
-    useEffect(() => {
-        fetchDataApi('bollards/markers', setBollardsList)
-    }, [])
+
+    const [mapLang, setMapLang] = useState(i18n.language);
+
+    i18n.on("languageChanged", (lang) => {
+        setMapLang(lang);
+    })
 
     /**
      * Get the maximum visible area.
@@ -30,21 +33,18 @@ const MapPage = () => {
         const corner1 = L.latLng(	47.91130, 5.52227 ),
         corner2 = L.latLng(45.66749, 10.64845 );
         return L.latLngBounds(corner1, corner2);
-    }
+    };
 
     return (
         <div>
-            <MapContainer 
+            <MapContainer
+                key={"map-" + mapLang}
                 className='map-page-div' 
                 center={mapCenter} 
                 zoom={mapZoom}
                 minZoom={9}
                 maxBounds={getBounds()} >
-                <TileLayer
-                    attribution='&copy; <a href="https://www.geo.admin.ch/en/about-swiss-geoportal/impressum.html#copyright">geo.admin.ch</a> contributors'
-                    url="https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg"
-                />
-                <BollardMarkerList bollardMarkers={bollardsList}></BollardMarkerList>
+                    <MainMap></MainMap>
             </MapContainer>
         </div>
        
