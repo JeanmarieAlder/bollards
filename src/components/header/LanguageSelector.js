@@ -25,6 +25,7 @@ const LanguageSelector = () => {
                             onClick={() => {
                                 i18next.changeLanguage(lang);
                                 setSelected(lang);
+                                window.location.reload(false);
                             }}
                         >{languageMap[lang].label}</NavDropdown.Item>
                     )

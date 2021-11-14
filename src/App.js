@@ -8,7 +8,10 @@ import MapPage from './pages/MapPage';
 function App() {
     return (
         <div className='main-div'>
-            <Header></Header>
+            <Switch>
+                <Route path={'/map'} component={() => <Header fixed='' />} />
+                <Route path={'/'} component={() => <Header fixed='top' />} />
+            </Switch>
             <main role="main" className="container">
                 <Switch>
                     <Route path='/map' component={MapPage} />

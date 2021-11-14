@@ -6,19 +6,23 @@ import { useTranslation } from "react-i18next";
 
 import './Header.css';
 
-const Header = () => {
+const Header = ({fixed}) => {
     const { t } = useTranslation();
     const [expanded, setExpanded] = useState(false);
+    const onClickToList = () => {
+        setExpanded(false);
+        sessionStorage.removeItem("scroll-position-bollard-id");
+    };
     return (
-        <Navbar bg="light" expand="lg" expanded={expanded}>
+        <Navbar bg="light" expand="lg" expanded={expanded} fixed={fixed}>
             <Container>
-                <LinkContainer to="/home" onClick={() => setExpanded(false)}>
+                <LinkContainer to="/home" onClick={() => onClickToList()}>
                     <Navbar.Brand>bollards.ch</Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <LinkContainer to="/list" onClick={() => setExpanded(false)}>
+                    <LinkContainer to="/list" onClick={() => onClickToList()}>
                         <Nav.Link>{t("s_list")}</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/map" onClick={() => setExpanded(false)}>

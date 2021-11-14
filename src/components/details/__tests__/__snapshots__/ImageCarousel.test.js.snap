@@ -1,0 +1,379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component displays correctly 1`] = `
+<div
+  className="carousel-root"
+>
+  <div
+    className="carousel carousel-slider"
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <ul
+      className="control-dots"
+    >
+      <li
+        aria-label="slide item 1"
+        className="dot selected"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+        value={0}
+      />
+    </ul>
+    <button
+      aria-label="previous slide / item"
+      className="control-arrow control-prev control-disabled"
+      onClick={[Function]}
+      type="button"
+    />
+    <div
+      className="slider-wrapper axis-horizontal"
+      style={Object {}}
+    >
+      <ul
+        className="slider animated"
+        style={
+          Object {
+            "MozTransitionDuration": "350ms",
+            "OTransform": "translate3d(-100%,0,0)",
+            "OTransitionDuration": "350ms",
+            "WebkitTransform": "translate3d(-100%,0,0)",
+            "WebkitTransitionDuration": "350ms",
+            "msTransform": "translate3d(-100%,0,0)",
+            "msTransitionDuration": "350ms",
+            "transform": "translate3d(-100%,0,0)",
+            "transitionDuration": "350ms",
+          }
+        }
+      >
+        <li
+          className="slide selected previous"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            className="carousel-image-div"
+          >
+            <img
+              alt="bollard"
+              className="carousel-image"
+              src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+            />
+          </div>
+        </li>
+        <li
+          className="slide selected previous"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            className="carousel-image-div"
+          >
+            <img
+              alt="bollard"
+              className="carousel-image"
+              src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button
+      aria-label="next slide / item"
+      className="control-arrow control-next control-disabled"
+      onClick={[Function]}
+      type="button"
+    />
+    <p
+      className="carousel-status"
+    >
+      1 of 1
+    </p>
+  </div>
+  <div
+    className="carousel"
+  >
+    <div
+      className="thumbs-wrapper axis-vertical"
+    >
+      <button
+        aria-label="previous slide / item"
+        className="control-arrow control-prev control-disabled"
+        onClick={[Function]}
+        type="button"
+      />
+      <ul
+        className="thumbs animated"
+        style={
+          Object {
+            "MozTransform": "translate3d(0,0,0)",
+            "MozTransitionDuration": "350ms",
+            "MsTransform": "translate3d(0,0,0)",
+            "MsTransitionDuration": "350ms",
+            "OTransform": "translate3d(0,0,0)",
+            "OTransitionDuration": "350ms",
+            "WebkitTransform": "translate3d(0,0,0)",
+            "WebkitTransitionDuration": "350ms",
+            "msTransform": "translate3d(0,0,0)",
+            "msTransitionDuration": "350ms",
+            "transform": "translate3d(0,0,0)",
+            "transitionDuration": "350ms",
+          }
+        }
+      >
+        <li
+          aria-label="slide item 1"
+          className="thumb selected"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          style={
+            Object {
+              "width": 80,
+            }
+          }
+          tabIndex={0}
+        >
+          <img
+            alt="bollard"
+            className="carousel-image"
+            src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+          />
+        </li>
+      </ul>
+      <button
+        aria-label="next slide / item"
+        className="control-arrow control-next control-disabled"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Component displays correctly with multiple pictures 1`] = `
+<div
+  className="carousel-root"
+>
+  <div
+    className="carousel carousel-slider"
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <ul
+      className="control-dots"
+    >
+      <li
+        aria-label="slide item 1"
+        className="dot selected"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+        value={0}
+      />
+      <li
+        aria-label="slide item 2"
+        className="dot"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+        value={1}
+      />
+    </ul>
+    <button
+      aria-label="previous slide / item"
+      className="control-arrow control-prev"
+      onClick={[Function]}
+      type="button"
+    />
+    <div
+      className="slider-wrapper axis-horizontal"
+      style={Object {}}
+    >
+      <ul
+        className="slider animated"
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "MozTransitionDuration": "350ms",
+            "OTransform": "translate3d(-100%,0,0)",
+            "OTransitionDuration": "350ms",
+            "WebkitTransform": "translate3d(-100%,0,0)",
+            "WebkitTransitionDuration": "350ms",
+            "msTransform": "translate3d(-100%,0,0)",
+            "msTransitionDuration": "350ms",
+            "transform": "translate3d(-100%,0,0)",
+            "transitionDuration": "350ms",
+          }
+        }
+      >
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            className="carousel-image-div"
+          >
+            <img
+              alt="bollard"
+              className="carousel-image"
+              src="http://localhost:5000/static/img/bollards/4e5809202f8beb95.jpg"
+            />
+          </div>
+        </li>
+        <li
+          className="slide selected previous"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            className="carousel-image-div"
+          >
+            <img
+              alt="bollard"
+              className="carousel-image"
+              src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+            />
+          </div>
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            className="carousel-image-div"
+          >
+            <img
+              alt="bollard"
+              className="carousel-image"
+              src="http://localhost:5000/static/img/bollards/4e5809202f8beb95.jpg"
+            />
+          </div>
+        </li>
+        <li
+          className="slide selected previous"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            className="carousel-image-div"
+          >
+            <img
+              alt="bollard"
+              className="carousel-image"
+              src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button
+      aria-label="next slide / item"
+      className="control-arrow control-next"
+      onClick={[Function]}
+      type="button"
+    />
+    <p
+      className="carousel-status"
+    >
+      1 of 2
+    </p>
+  </div>
+  <div
+    className="carousel"
+  >
+    <div
+      className="thumbs-wrapper axis-vertical"
+    >
+      <button
+        aria-label="previous slide / item"
+        className="control-arrow control-prev control-disabled"
+        onClick={[Function]}
+        type="button"
+      />
+      <ul
+        className="thumbs animated"
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "MozTransform": "translate3d(0,0,0)",
+            "MozTransitionDuration": "350ms",
+            "MsTransform": "translate3d(0,0,0)",
+            "MsTransitionDuration": "350ms",
+            "OTransform": "translate3d(0,0,0)",
+            "OTransitionDuration": "350ms",
+            "WebkitTransform": "translate3d(0,0,0)",
+            "WebkitTransitionDuration": "350ms",
+            "msTransform": "translate3d(0,0,0)",
+            "msTransitionDuration": "350ms",
+            "transform": "translate3d(0,0,0)",
+            "transitionDuration": "350ms",
+          }
+        }
+      >
+        <li
+          aria-label="slide item 1"
+          className="thumb selected"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          style={
+            Object {
+              "width": 80,
+            }
+          }
+          tabIndex={0}
+        >
+          <img
+            alt="bollard"
+            className="carousel-image"
+            src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+          />
+        </li>
+        <li
+          aria-label="slide item 2"
+          className="thumb"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          style={
+            Object {
+              "width": 80,
+            }
+          }
+          tabIndex={0}
+        >
+          <img
+            alt="bollard"
+            className="carousel-image"
+            src="http://localhost:5000/static/img/bollards/4e5809202f8beb95.jpg"
+          />
+        </li>
+      </ul>
+      <button
+        aria-label="next slide / item"
+        className="control-arrow control-next control-disabled"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+  </div>
+</div>
+`;
