@@ -1,6 +1,5 @@
 import * as L from 'leaflet';
-import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import React from 'react';
 import { MapContainer } from 'react-leaflet';
 import { useLocation } from 'react-router-dom';
 import MainMap from '../components/map/MainMap';
@@ -11,7 +10,6 @@ function useQuery() {
 }
 
 const MapPage = () => {
-    let { i18n } = useTranslation();
     let query = useQuery();
     let mapCenter = [
         query.get('lat') || '46.586',
@@ -19,11 +17,6 @@ const MapPage = () => {
     ]
     let mapZoom = query.get('zoom') || 10;
 
-    const [mapLang, setMapLang] = useState(i18n.language);
-
-    i18n.on("languageChanged", (lang) => {
-        setMapLang(lang);
-    })
 
     /**
      * Get the maximum visible area.
@@ -38,7 +31,7 @@ const MapPage = () => {
     return (
         <div>
             <MapContainer
-                key={"map-" + mapLang}
+                key={"map"}
                 className='map-page-div' 
                 center={mapCenter} 
                 zoom={mapZoom}
