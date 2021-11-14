@@ -1,0 +1,538 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App displays correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="main-div"
+  >
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+    >
+      <div
+        class="container"
+      >
+        <a
+          class="navbar-brand"
+          href="/home"
+        >
+          bollards.ch
+        </a>
+        <button
+          aria-controls="basic-navbar-nav"
+          aria-label="Toggle navigation"
+          class="navbar-toggler collapsed"
+          type="button"
+        >
+          <span
+            class="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          class="navbar-collapse collapse"
+          id="basic-navbar-nav"
+        >
+          <div
+            class="me-auto navbar-nav"
+          >
+            <a
+              class="nav-link"
+              data-rr-ui-event-key="/list"
+              href="/list"
+            >
+              s_list
+            </a>
+            <a
+              class="nav-link"
+              data-rr-ui-event-key="/map"
+              href="/map"
+            >
+              s_map
+            </a>
+            <a
+              class="nav-link"
+              data-rr-ui-event-key="/news"
+              href="/news"
+            >
+              s_news
+            </a>
+          </div>
+          <div
+            class="justify-content-end navbar-nav"
+          >
+            <a
+              class="nav-link disabled"
+              data-rr-ui-event-key="/about"
+              disabled=""
+              href="/about"
+            >
+              s_about
+            </a>
+            <a
+              class="nav-link disabled"
+              data-rr-ui-event-key="/contact"
+              disabled=""
+              href="/contact"
+            >
+              s_contact
+            </a>
+            <div
+              class="nav-item dropdown"
+            >
+              <a
+                aria-expanded="false"
+                class="dropdown-toggle nav-link"
+                id="basic-nav-dropdown"
+                role="button"
+                tabindex="0"
+              >
+                Français
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="container"
+      role="main"
+    >
+      <div
+        class="home-page-div"
+      >
+        <div
+          id="home-page-title-div"
+        >
+          <p
+            class="home-page-title fade-in"
+            id="home-page-title"
+          >
+            bollards.ch
+          </p>
+        </div>
+        <div
+          class="map-link-div"
+        >
+          <a
+            href="/map"
+          >
+            <img
+              alt="map-link"
+              class="map-link-image"
+              src="map_link.png"
+            />
+          </a>
+        </div>
+        <div
+          class="search-box-div"
+        >
+          <input
+            placeholder="Search Bollards"
+            type="search"
+          />
+        </div>
+        <div
+          class="p-2 card-container row text-center justify-content-center"
+        />
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App displays correctly with details route 1`] = `
+<DocumentFragment>
+  <div
+    class="main-div"
+  >
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <div
+        class="container"
+      >
+        <a
+          class="navbar-brand"
+          href="/home"
+        >
+          bollards.ch
+        </a>
+        <button
+          aria-controls="basic-navbar-nav"
+          aria-label="Toggle navigation"
+          class="navbar-toggler collapsed"
+          type="button"
+        >
+          <span
+            class="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          class="navbar-collapse collapse"
+          id="basic-navbar-nav"
+        >
+          <div
+            class="me-auto navbar-nav"
+          >
+            <a
+              class="nav-link"
+              data-rr-ui-event-key="/list"
+              href="/list"
+            >
+              s_list
+            </a>
+            <a
+              class="nav-link"
+              data-rr-ui-event-key="/map"
+              href="/map"
+            >
+              s_map
+            </a>
+            <a
+              class="nav-link"
+              data-rr-ui-event-key="/news"
+              href="/news"
+            >
+              s_news
+            </a>
+          </div>
+          <div
+            class="justify-content-end navbar-nav"
+          >
+            <a
+              class="nav-link disabled"
+              data-rr-ui-event-key="/about"
+              disabled=""
+              href="/about"
+            >
+              s_about
+            </a>
+            <a
+              class="nav-link disabled"
+              data-rr-ui-event-key="/contact"
+              disabled=""
+              href="/contact"
+            >
+              s_contact
+            </a>
+            <div
+              class="nav-item dropdown"
+            >
+              <a
+                aria-expanded="false"
+                class="dropdown-toggle nav-link"
+                id="basic-nav-dropdown"
+                role="button"
+                tabindex="0"
+              >
+                Français
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="container"
+      role="main"
+    >
+      <div
+        class="home-page-div"
+      >
+        <div
+          id="home-page-title-div"
+        >
+          <p
+            class="home-page-title fade-in"
+            id="home-page-title"
+          >
+            bollards.ch
+          </p>
+        </div>
+        <div
+          class="map-link-div"
+        >
+          <a
+            href="/map"
+          >
+            <img
+              alt="map-link"
+              class="map-link-image"
+              src="map_link.png"
+            />
+          </a>
+        </div>
+        <div
+          class="search-box-div"
+        >
+          <input
+            placeholder="Search Bollards"
+            type="search"
+          />
+        </div>
+        <div
+          class="p-2 card-container row text-center justify-content-center"
+        />
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App displays correctly with map route 1`] = `
+<DocumentFragment>
+  <div
+    class="main-div"
+  >
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <div
+        class="container"
+      >
+        <a
+          class="navbar-brand"
+          href="/home"
+        >
+          bollards.ch
+        </a>
+        <button
+          aria-controls="basic-navbar-nav"
+          aria-label="Toggle navigation"
+          class="navbar-toggler collapsed"
+          type="button"
+        >
+          <span
+            class="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          class="navbar-collapse collapse"
+          id="basic-navbar-nav"
+        >
+          <div
+            class="me-auto navbar-nav"
+          >
+            <a
+              class="nav-link"
+              data-rr-ui-event-key="/list"
+              href="/list"
+            >
+              s_list
+            </a>
+            <a
+              class="active nav-link"
+              data-rr-ui-event-key="/map"
+              href="/map"
+            >
+              s_map
+            </a>
+            <a
+              class="nav-link"
+              data-rr-ui-event-key="/news"
+              href="/news"
+            >
+              s_news
+            </a>
+          </div>
+          <div
+            class="justify-content-end navbar-nav"
+          >
+            <a
+              class="nav-link disabled"
+              data-rr-ui-event-key="/about"
+              disabled=""
+              href="/about"
+            >
+              s_about
+            </a>
+            <a
+              class="nav-link disabled"
+              data-rr-ui-event-key="/contact"
+              disabled=""
+              href="/contact"
+            >
+              s_contact
+            </a>
+            <div
+              class="nav-item dropdown"
+            >
+              <a
+                aria-expanded="false"
+                class="dropdown-toggle nav-link"
+                id="basic-nav-dropdown"
+                role="button"
+                tabindex="0"
+              >
+                Français
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="container"
+      role="main"
+    >
+      <div>
+        <div
+          class="map-page-div leaflet-container leaflet-grab leaflet-touch-drag"
+          style="position: relative;"
+          tabindex="0"
+        >
+          <div
+            class="leaflet-pane leaflet-map-pane"
+            style="left: 0px; top: 0px;"
+          >
+            <div
+              class="leaflet-pane leaflet-tile-pane"
+            >
+              <div
+                class="leaflet-layer "
+                style="z-index: 2;"
+              >
+                <div
+                  class="leaflet-tile-container leaflet-zoom-animated"
+                  style="z-index: 18; left: 0px; top: 0px;"
+                >
+                  <img
+                    alt=""
+                    class="leaflet-tile"
+                    role="presentation"
+                    src="https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.swissimage/default/current/3857/10/529/361.jpeg"
+                    style="width: 256px; height: 256px; left: -206px; top: -227px;"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="leaflet-pane leaflet-shadow-pane"
+            />
+            <div
+              class="leaflet-pane leaflet-overlay-pane"
+            />
+            <div
+              class="leaflet-pane leaflet-marker-pane"
+            />
+            <div
+              class="leaflet-pane leaflet-tooltip-pane"
+            />
+            <div
+              class="leaflet-pane leaflet-popup-pane"
+            />
+          </div>
+          <div
+            class="leaflet-control-container"
+          >
+            <div
+              class="leaflet-top leaflet-left"
+            >
+              <div
+                class="leaflet-control-zoom leaflet-bar leaflet-control"
+              >
+                <a
+                  aria-label="Zoom in"
+                  class="leaflet-control-zoom-in"
+                  href="#"
+                  role="button"
+                  title="Zoom in"
+                >
+                  +
+                </a>
+                <a
+                  aria-label="Zoom out"
+                  class="leaflet-control-zoom-out"
+                  href="#"
+                  role="button"
+                  title="Zoom out"
+                >
+                  −
+                </a>
+              </div>
+            </div>
+            <div
+              class="leaflet-top leaflet-right"
+            >
+              <div
+                aria-haspopup="true"
+                class="leaflet-control-layers leaflet-control-layers-expanded leaflet-control"
+              >
+                <a
+                  class="leaflet-control-layers-toggle"
+                  href="#"
+                  title="Layers"
+                />
+                <section
+                  class="leaflet-control-layers-list leaflet-control-layers-scrollbar"
+                  style="height: -50px;"
+                >
+                  <div
+                    class="leaflet-control-layers-base"
+                  >
+                    <label>
+                      <div>
+                        <input
+                          class="leaflet-control-layers-selector"
+                          name="leaflet-base-layers_27"
+                          type="radio"
+                        />
+                        <span>
+                           s_map
+                        </span>
+                      </div>
+                    </label>
+                    <label>
+                      <div>
+                        <input
+                          checked="checked"
+                          class="leaflet-control-layers-selector"
+                          name="leaflet-base-layers_27"
+                          type="radio"
+                        />
+                        <span>
+                           s_satellite
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div
+                    class="leaflet-control-layers-separator"
+                    style="display: none;"
+                  />
+                  <div
+                    class="leaflet-control-layers-overlays"
+                  />
+                </section>
+              </div>
+            </div>
+            <div
+              class="leaflet-bottom leaflet-left"
+            />
+            <div
+              class="leaflet-bottom leaflet-right"
+            >
+              <div
+                class="leaflet-control-attribution leaflet-control"
+              >
+                <a
+                  href="https://leafletjs.com"
+                  title="A JS library for interactive maps"
+                >
+                  Leaflet
+                </a>
+                 | © Data: 
+                <a
+                  href="https://www.swisstopo.admin.ch/en/home.html"
+                >
+                  CNES, Spot Image, swisstopo, NPOC
+                </a>
+              </div>
+            </div>
+          </div>
+          <div />
+        </div>
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;

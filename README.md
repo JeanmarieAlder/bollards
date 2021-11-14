@@ -7,7 +7,26 @@ I needed a platform where I could simply store and nicely display all bollards d
 ## Deployment notice
 
 ### Global Configuration
-Make sure you create the src/Config.js file (using Config.example.js)
+Make sure you set all the required environment variables listed in src/Config.js
+
+## Unit tests
+To run unit tests, make sure you have run "npm install" and use the following commands:
+- To run tests with jest cli, run:
+```bash
+npm run test
+```
+- To run tests without the cli, run:
+```bash
+npm run test -- --watchAll=false
+```
+- To run tests with coverage, use something like:
+```bash
+npm run test -- --watchAll=false --coverage=true
+```
+- If you need to update snapshot (and after making sure that changes are normal), use the "-u" flag:
+```bash
+npm run test -- --watchAll=false -u
+```
 
 ## Getting Started with Create React App
 
