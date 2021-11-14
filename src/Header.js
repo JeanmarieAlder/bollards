@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import LanguageSelector from './components/header/LanguageSelector';
@@ -13,6 +13,21 @@ const Header = ({fixed}) => {
         setExpanded(false);
         sessionStorage.removeItem("scroll-position-bollard-id");
     };
+    useEffect(() => {
+        if(fixed === ''){
+            document.body.style.marginTop = '0px'
+        }else{
+            if(expanded){
+                document.body.style.transition = 'margin 0.5s ease';
+                document.body.style.marginTop = '296px';
+            }else{
+                document.body.style.marginTop = '56px';
+            }
+        }
+        return () => { //component unmount
+            document.body.style.marginTop = '0px'
+        }
+    }, [fixed, expanded])
     return (
         <Navbar bg="light" expand="lg" expanded={expanded} fixed={fixed}>
             <Container>

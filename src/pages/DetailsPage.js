@@ -50,7 +50,7 @@ const DetailsPage = () => {
                         />
                         <CurrentBollardMarker bollard={bollard}></CurrentBollardMarker>
                         <BollardMarkerList bollardMarkers={bollard.neighbours}></BollardMarkerList>
-                        <CustomMapButton position="topright"></CustomMapButton>
+                        <CustomMapButton ></CustomMapButton>
                     </MapContainer>
                 </div>
             </div>

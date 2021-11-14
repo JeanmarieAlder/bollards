@@ -9,11 +9,9 @@ const BollardCard = ({bollard, onSelectBollard, restoreRef}) => {
     const [imageLoaded, setImageLoaded] = useState(false);
 
     useEffect(() => {
-        console.log(restoreRef)
         if(!restoreRef){
             return
         }
-        console.log("Found the previous bollard man, just dont wanna scroll to it ftm.")
         divRef.current.scrollIntoView({ behavior: 'auto', block: 'center' })
     }, [restoreRef, imageLoaded])
 

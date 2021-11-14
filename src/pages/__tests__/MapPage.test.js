@@ -1,9 +1,6 @@
 import React from 'react';
 import MapPage from '../MapPage';
-import renderer from 'react-test-renderer';
-import { render, fireEvent, createEvent } from '@testing-library/react'
-import { i18n } from 'i18next';
-import { useTranslation } from 'react-i18next';
+import { render } from '@testing-library/react'
 
 function mockFunction() {
   const original = jest.requireActual('react-router-dom');

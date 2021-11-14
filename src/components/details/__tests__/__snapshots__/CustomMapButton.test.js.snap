@@ -80,6 +80,28 @@ exports[`Component displays correctly 1`] = `
         </div>
       </div>
     </div>
+    <div
+      class="topright leaflet-top leaflet-right"
+      style="height: 80px; width: 200px;"
+    >
+      <div
+        class="leaflet-control"
+      >
+        <a
+          href="/map?zoom=15&lat=46.12&lng=7.12"
+        >
+          <button
+            class="map-expand-button btn btn-dark"
+            id="expand-map-button"
+            type="button"
+          >
+            <b>
+              s_expand
+            </b>
+          </button>
+        </a>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

@@ -13,7 +13,6 @@ const BollardCardList = ({bollards}) => {
 
     //https://blog.logrocket.com/implementing-scroll-restoration-in-ecommerce-react-apps/
     const persistScrollPosition = (id) => {
-        console.log('look at your session storage man. ' + id)
         sessionStorage.setItem("scroll-position-bollard-id", id);
       };
 

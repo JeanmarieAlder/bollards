@@ -1,24 +1,20 @@
 import React from 'react';
+import { render } from '@testing-library/react'
 import { MapContainer } from 'react-leaflet';
-import renderer from 'react-test-renderer';
 import CurrentBollardMarker from '../CurrentBollardMarker';
 
-//jest.mock('leaflet');
-
 test("Component displays correctly", () => {
-    const component = renderer.create(
-        <div style={{height:'100%'}}>
-            <MapContainer style={{height:'100%'}}>
-                <CurrentBollardMarker bollard={{
-                    b_lat: "46.1", 
-                    b_lng: "6.9", 
-                    b_type: "Forest", 
-                    b_number: 1,
-                    b_letter: "a"
-                }}/>
-            </MapContainer>
-        </div>
+    const component = render(
+        <MapContainer style={{height:'100%'}}>
+            <CurrentBollardMarker bollard={{
+                b_lat: "46.1", 
+                b_lng: "6.9", 
+                b_type: "Forest", 
+                b_number: 1,
+                b_letter: "a"
+            }}/>
+        </MapContainer>
       );
-      let tree = component.toJSON();
+      let tree = component.asFragment();
       expect(tree).toMatchSnapshot();
 });

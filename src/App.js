@@ -10,6 +10,7 @@ function App() {
         <div className='main-div'>
             <Switch>
                 <Route path={'/map'} component={() => <Header fixed='' />} />
+                <Route path={'/details'} component={() => <Header fixed='' />} />
                 <Route path={'/'} component={() => <Header fixed='top' />} />
             </Switch>
             <main role="main" className="container">

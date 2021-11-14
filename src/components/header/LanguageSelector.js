@@ -27,7 +27,6 @@ const LanguageSelector = () => {
                         onClick={() => {
                             i18next.changeLanguage(lang);
                             setSelected(lang);
-                            console.log(location.pathname);
                             //Reload page if current is map (for translations)
                             if(location.pathname === "/map"){
                                 window.location.reload(false);
