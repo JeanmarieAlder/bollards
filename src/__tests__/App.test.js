@@ -1,7 +1,20 @@
 import React from "react";
-import { render } from '@testing-library/react'
+import { render } from '@testing-library/react';
 import App from "../App";
 import { MemoryRouter, BrowserRouter } from "react-router-dom";
+
+jest.mock('react-i18next', () => ({
+    // this mock makes sure any components using the translate hook can use it without a warning being shown
+    useTranslation: () => {
+      return {
+        t: (str) => str,
+        i18n: {
+          ...jest.requireActual('react-i18next'),
+          on: () => {}
+        },
+      };
+    },
+  }));
 
 test("App displays correctly", () => {
     const component = render(
@@ -10,7 +23,6 @@ test("App displays correctly", () => {
         </MemoryRouter>
     );
     let tree = component.asFragment();
-    console.log(tree)
     expect(tree).toMatchSnapshot();
 })
 
@@ -21,7 +33,6 @@ test("App displays correctly with map route", () => {
         </MemoryRouter>
     );
     let tree = component.asFragment();
-    console.log(tree)
     expect(tree).toMatchSnapshot();
 })
 
@@ -32,6 +43,5 @@ test("App displays correctly with details route", () => {
         </MemoryRouter>
     );
     let tree = component.asFragment();
-    console.log(tree)
     expect(tree).toMatchSnapshot();
 })
