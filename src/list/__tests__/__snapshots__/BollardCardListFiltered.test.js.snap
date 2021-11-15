@@ -1,0 +1,988 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component displays correctly with correct data 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <h2
+        class="search-result-title"
+      >
+        By number:
+      </h2>
+      <div
+        class="p-2 card-container row text-center justify-content-center"
+      >
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="7"
+        >
+          <a
+            href="/details/8"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/b9c559e2cdd6e8d3.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 7
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="10"
+        >
+          <a
+            href="/details/11"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/b673f71ca97afdcf.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 10
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i>
+                    Beuffarde
+                  </i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="11"
+        >
+          <a
+            href="/details/15"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/d9093d663fb67db6.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 11
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i>
+                    Coin de la Beuffarde
+                  </i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="27"
+        >
+          <a
+            href="/details/30"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/1b5e007272220edb.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 27
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="28"
+        >
+          <a
+            href="/details/31"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/91daf6e9e0dc99fd.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 28
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="33"
+        >
+          <a
+            href="/details/36"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/84bcd953b6cb9785.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 33
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="36"
+        >
+          <a
+            href="/details/39"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/6b6f318eb9701310.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 36
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="51"
+        >
+          <a
+            href="/details/54"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/90ed7af297c625fb.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 51
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2
+        class="search-result-title"
+      >
+        By name:
+      </h2>
+      <div
+        class="p-2 card-container row text-center justify-content-center"
+      >
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="1"
+        >
+          <a
+            href="/details/2"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/826c55aebf4647dc.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 1
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i>
+                    Vitiau
+                  </i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="2"
+        >
+          <a
+            href="/details/3"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/e29b594d3a24e099.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 2
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="3"
+        >
+          <a
+            href="/details/4"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/4b635e63a0cadfe8.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 3
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="4"
+        >
+          <a
+            href="/details/5"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/7912ec4e83a3052d.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 4
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="5"
+        >
+          <a
+            href="/details/6"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/a9665f2a2e842c63.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 5
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="9"
+        >
+          <a
+            href="/details/10"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/447a750ec8444c4e.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 9
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="12"
+        >
+          <a
+            href="/details/16"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/8ff823e0456788f7.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 12
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="14"
+        >
+          <a
+            href="/details/18"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/d23aa027ba4470d5.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 14
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="17"
+        >
+          <a
+            href="/details/21"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/03613de1d21e6547.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 17
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="18"
+        >
+          <a
+            href="/details/22"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/f20a51c0eee81314.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 18
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="19"
+        >
+          <a
+            href="/details/23"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/6a49d02b089a1fcd.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 19
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="20"
+        >
+          <a
+            href="/details/24"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/a17cab4f257a4a5e.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 20
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="52"
+        >
+          <a
+            href="/details/55"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/ee23677ee816de42.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 52
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-3 bollard-card"
+          id="53"
+        >
+          <a
+            href="/details/56"
+            style="text-decoration: none;"
+          >
+            <div
+              class="card"
+            >
+              <div
+                class="img-loading-div"
+              >
+                <div
+                  class="spinner-grow text-secondary"
+                  role="status"
+                />
+              </div>
+              <div>
+                <img
+                  alt="bollard"
+                  class="img-preview"
+                  src="http://localhost:5000/static/img/bollards_icon/4a7009e8ef06e824.jpg"
+                />
+              </div>
+              <div
+                class="card-body bollard-card-text-div"
+              >
+                <h2
+                  class="card-title"
+                >
+                  No 53
+                </h2>
+                <p
+                  class="card-text"
+                >
+                  <i />
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component displays correctly without data 1`] = `
+<DocumentFragment>
+  <div />
+</DocumentFragment>
+`;
