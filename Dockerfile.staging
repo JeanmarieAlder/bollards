@@ -1,9 +1,6 @@
 ## Node part
 FROM node:16.7-buster-slim as build-stage
 
-ARG REACT_APP_API_URL=${REACT_APP_API_URL}
-ARG REACT_APP_STATIC_FILES_URL=${REACT_APP_STATIC_FILES_URL}
-
 COPY package.json /bollards/package.json
 
 RUN cd /bollards; npm install
