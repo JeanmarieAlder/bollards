@@ -28,7 +28,7 @@ exports[`Component displays correctly 1`] = `
             <img
               alt="bollard"
               class="img-preview"
-              src="http://localhost:5000/static/img/bollards_icon/b9c559e2cdd6e8d3.jpg"
+              src="/static/img/bollards_icon/b9c559e2cdd6e8d3.jpg"
             />
           </div>
           <div
@@ -71,7 +71,7 @@ exports[`Component displays correctly 1`] = `
             <img
               alt="bollard"
               class="img-preview"
-              src="http://localhost:5000/static/img/bollards_icon/b673f71ca97afdcf.jpg"
+              src="/static/img/bollards_icon/b673f71ca97afdcf.jpg"
             />
           </div>
           <div
@@ -116,7 +116,7 @@ exports[`Component displays correctly 1`] = `
             <img
               alt="bollard"
               class="img-preview"
-              src="http://localhost:5000/static/img/bollards_icon/d9093d663fb67db6.jpg"
+              src="/static/img/bollards_icon/d9093d663fb67db6.jpg"
             />
           </div>
           <div
@@ -161,7 +161,7 @@ exports[`Component displays correctly 1`] = `
             <img
               alt="bollard"
               class="img-preview"
-              src="http://localhost:5000/static/img/bollards_icon/1b5e007272220edb.jpg"
+              src="/static/img/bollards_icon/1b5e007272220edb.jpg"
             />
           </div>
           <div
@@ -204,7 +204,7 @@ exports[`Component displays correctly 1`] = `
             <img
               alt="bollard"
               class="img-preview"
-              src="http://localhost:5000/static/img/bollards_icon/91daf6e9e0dc99fd.jpg"
+              src="/static/img/bollards_icon/91daf6e9e0dc99fd.jpg"
             />
           </div>
           <div
@@ -247,7 +247,7 @@ exports[`Component displays correctly 1`] = `
             <img
               alt="bollard"
               class="img-preview"
-              src="http://localhost:5000/static/img/bollards_icon/84bcd953b6cb9785.jpg"
+              src="/static/img/bollards_icon/84bcd953b6cb9785.jpg"
             />
           </div>
           <div
@@ -290,7 +290,7 @@ exports[`Component displays correctly 1`] = `
             <img
               alt="bollard"
               class="img-preview"
-              src="http://localhost:5000/static/img/bollards_icon/6b6f318eb9701310.jpg"
+              src="/static/img/bollards_icon/6b6f318eb9701310.jpg"
             />
           </div>
           <div
@@ -333,7 +333,7 @@ exports[`Component displays correctly 1`] = `
             <img
               alt="bollard"
               class="img-preview"
-              src="http://localhost:5000/static/img/bollards_icon/90ed7af297c625fb.jpg"
+              src="/static/img/bollards_icon/90ed7af297c625fb.jpg"
             />
           </div>
           <div
