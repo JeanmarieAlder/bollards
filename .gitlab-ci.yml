@@ -13,6 +13,7 @@ cache:
 
 before_script:
   - npm install
+  - mv src/Config.example.js src/Config.js
 
 unit-test-job:   # This job runs in the test stage.
   stage: unit-test    # It only starts when the job in the build stage completes successfully.
