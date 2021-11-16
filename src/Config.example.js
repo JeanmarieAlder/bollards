@@ -1,5 +1,5 @@
 const Config = {
-    API_URL: "localhost:5000",
+    API_URL: "http://localhost:5000",
     STATIC_FILES_URL: ""
 };
 
