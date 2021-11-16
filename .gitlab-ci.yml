@@ -1,0 +1,33 @@
+stages:          # List of stages for jobs, and their order of execution
+  - unit-test
+  - build
+
+image: node:16.7.0
+
+# If you want to also cache the installed packages, you have to install
+# them in a virtualenv and cache it as well.
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install
+
+unit-test-job:   # This job runs in the test stage.
+  stage: unit-test    # It only starts when the job in the build stage completes successfully.
+  script:
+    - echo "Running unit tests..."
+    - npm run test -- --watchAll=false --coverage=true
+    - echo "done..."
+  artifacts:
+    paths:
+      - ./coverage
+
+build-project:
+  stage: build
+  script:
+    - echo ${CI_COMMIT_SHORT_SHA}
+    - echo "Building python dependencies..."
+    - npm run build
+    - echo "done..."
