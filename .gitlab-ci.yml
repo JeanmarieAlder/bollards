@@ -17,6 +17,9 @@ before_script:
 
 unit-test-job:   # This job runs in the test stage.
   stage: unit-test    # It only starts when the job in the build stage completes successfully.
+  environment:
+    name: code-coverage
+    url: https://https://gitlab.com/JeanmarieAlder/bollards/-/jobs/$CI_JOB_ID/artifacts/browse/coverage/lcov-report/
   script:
     - echo "Running unit tests..."
     - npm run test -- --watchAll=false --coverage=true
