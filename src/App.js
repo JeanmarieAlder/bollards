@@ -1,9 +1,11 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Header from './Header';
+import AboutPage from './pages/AboutPage';
 import DetailsPage from './pages/DetailsPage';
 import HomePage from './pages/HomePage';
 import MapPage from './pages/MapPage';
+import NewsPage from './pages/NewsPage';
 
 function App() {
     return (
@@ -17,6 +19,8 @@ function App() {
                 <Switch>
                     <Route path='/map' component={MapPage} />
                     <Route path='/details/:bollard_id' component={DetailsPage} />
+                    <Route path='/news' component={NewsPage} />
+                    <Route path='/about' component={AboutPage} />
                     <Route path={['/home', '/list', '/']} component={HomePage} />
                 </Switch>
             </main>

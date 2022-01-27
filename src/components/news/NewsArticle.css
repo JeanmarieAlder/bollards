@@ -1,0 +1,23 @@
+.news-article {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.news-article-infos {
+    text-align: right;
+}
+
+.news-article-image-div {
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.news-article-image {
+    max-width: 100%;
+}
+
+.news-article-abstract {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}

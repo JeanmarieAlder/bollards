@@ -1,8 +1,14 @@
 stages:          # List of stages for jobs, and their order of execution
   - unit-test
   - build
+  - deploy
+  - test-deployment
 
 image: node:16.7.0
+
+variables:
+  TEST_FRONTEND_URL: "bollards.wakxy.rocks"
+  FRONTEND_URL: "bollards-api.ch"
 
 # If you want to also cache the installed packages, you have to install
 # them in a virtualenv and cache it as well.
@@ -35,3 +41,84 @@ build-project:
     - echo "Building python dependencies..."
     - npm run build
     - echo "done..."
+
+deploy-job-staging:
+  image: alpine
+  stage: deploy
+  variables:
+    GIT_STRATEGY: none
+  cache: []
+  environment:
+    name: staging
+    url: https://$TEST_FRONTEND_URL
+  only:
+    - develop
+  before_script:
+    - echo "Alpine image loaded."
+  script:
+    - echo "Deploying application on development server..."
+    - chmod og= $TEST_ID_RSA # This is a requirement, they said...
+    - apk update && apk add openssh-client
+    - ssh -i $TEST_ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$TEST_SERVER_URL "cd /srv/bollards/bollards && git checkout src/pages/AboutPage.js && git pull"
+    - ssh -i $TEST_ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$TEST_SERVER_URL "sed -i 's/%%VERSION%%/$CI_COMMIT_SHORT_SHA/' /srv/bollards/bollards/src/pages/AboutPage.js"
+    - ssh -i $TEST_ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$TEST_SERVER_URL "cd /srv/bollards && docker-compose up -d --build nginx"
+    - echo "Application successfully deployed (Development)."
+
+test-staging-deployment:
+  image: alpine
+  stage: test-deployment
+  variables:
+    GIT_STRATEGY: none
+  cache: []
+  only:
+    - develop
+  before_script:
+    - echo "Alpine image loaded."
+  script:
+    - echo "Testing build $CI_COMMIT_SHORT_SHA on staging server."
+    - apk add --no-cache curl
+    - sleep 5
+    - curl -s "https://$TEST_FRONTEND_URL" | grep -q "Bollards - An Unbounded Bollard Experience"
+    - echo "Build $CI_COMMIT_SHORT_SHA is live on staging server."
+
+
+deploy-job-production:
+  image: alpine
+  stage: deploy
+  variables:
+    GIT_STRATEGY: none
+  cache: []
+  environment:
+    name: production
+    url: https://$FRONTEND_URL
+  when: manual
+  allow_failure: false
+  only:
+    - master
+  before_script:
+    - echo "Alpine image loaded."
+  script:
+    - echo "Deploying application on production server..."
+    - chmod og= $ID_RSA # This is a requirement, they said...
+    - apk update && apk add openssh-client
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$SERVER_URL "cd /srv/bollards/bollards && git checkout src/pages/AboutPage.js && git pull"
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$SERVER_URL "sed -i 's/%%VERSION%%/$CI_COMMIT_SHORT_SHA/' /srv/bollards/bollards/src/pages/AboutPage.js"
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$SERVER_URL "cd /srv/bollards && docker-compose up -d --build nginx"
+    - echo "Application successfully deployed (Production)."
+
+test-production-deployment:
+  image: alpine
+  stage: test-deployment
+  variables:
+    GIT_STRATEGY: none
+  cache: []
+  only:
+    - master
+  before_script:
+    - echo "Alpine image loaded."
+  script:
+    - echo "Testing build $CI_COMMIT_SHORT_SHA on staging server."
+    - apk add --no-cache curl
+    - sleep 10
+    - curl -s "https://$FRONTEND_URL" | grep -q "Bollards - An Unbounded Bollard Experience"
+    - echo "Build $CI_COMMIT_SHORT_SHA is live on production server."
