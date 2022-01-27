@@ -62,7 +62,7 @@ exports[`Component displays correctly 1`] = `
             <img
               alt="bollard"
               className="carousel-image"
-              src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+              src="/static/img/bollards/b9909a2f9d33190c.jpg"
             />
           </div>
         </li>
@@ -77,7 +77,7 @@ exports[`Component displays correctly 1`] = `
             <img
               alt="bollard"
               className="carousel-image"
-              src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+              src="/static/img/bollards/b9909a2f9d33190c.jpg"
             />
           </div>
         </li>
@@ -142,7 +142,7 @@ exports[`Component displays correctly 1`] = `
           <img
             alt="bollard"
             className="carousel-image"
-            src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+            src="/static/img/bollards/b9909a2f9d33190c.jpg"
           />
         </li>
       </ul>
@@ -231,7 +231,7 @@ exports[`Component displays correctly with multiple pictures 1`] = `
             <img
               alt="bollard"
               className="carousel-image"
-              src="http://localhost:5000/static/img/bollards/4e5809202f8beb95.jpg"
+              src="/static/img/bollards/4e5809202f8beb95.jpg"
             />
           </div>
         </li>
@@ -246,7 +246,7 @@ exports[`Component displays correctly with multiple pictures 1`] = `
             <img
               alt="bollard"
               className="carousel-image"
-              src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+              src="/static/img/bollards/b9909a2f9d33190c.jpg"
             />
           </div>
         </li>
@@ -261,7 +261,7 @@ exports[`Component displays correctly with multiple pictures 1`] = `
             <img
               alt="bollard"
               className="carousel-image"
-              src="http://localhost:5000/static/img/bollards/4e5809202f8beb95.jpg"
+              src="/static/img/bollards/4e5809202f8beb95.jpg"
             />
           </div>
         </li>
@@ -276,7 +276,7 @@ exports[`Component displays correctly with multiple pictures 1`] = `
             <img
               alt="bollard"
               className="carousel-image"
-              src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+              src="/static/img/bollards/b9909a2f9d33190c.jpg"
             />
           </div>
         </li>
@@ -344,7 +344,7 @@ exports[`Component displays correctly with multiple pictures 1`] = `
           <img
             alt="bollard"
             className="carousel-image"
-            src="http://localhost:5000/static/img/bollards/b9909a2f9d33190c.jpg"
+            src="/static/img/bollards/b9909a2f9d33190c.jpg"
           />
         </li>
         <li
@@ -363,7 +363,7 @@ exports[`Component displays correctly with multiple pictures 1`] = `
           <img
             alt="bollard"
             className="carousel-image"
-            src="http://localhost:5000/static/img/bollards/4e5809202f8beb95.jpg"
+            src="/static/img/bollards/4e5809202f8beb95.jpg"
           />
         </li>
       </ul>
