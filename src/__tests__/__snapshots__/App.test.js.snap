@@ -60,9 +60,8 @@ exports[`App displays correctly 1`] = `
             class="justify-content-end navbar-nav"
           >
             <a
-              class="nav-link disabled"
+              class="nav-link"
               data-rr-ui-event-key="/about"
-              disabled=""
               href="/about"
             >
               s_about
@@ -199,9 +198,8 @@ exports[`App displays correctly with details route 1`] = `
             class="justify-content-end navbar-nav"
           >
             <a
-              class="nav-link disabled"
+              class="nav-link"
               data-rr-ui-event-key="/about"
-              disabled=""
               href="/about"
             >
               s_about
@@ -338,9 +336,8 @@ exports[`App displays correctly with map route 1`] = `
             class="justify-content-end navbar-nav"
           >
             <a
-              class="nav-link disabled"
+              class="nav-link"
               data-rr-ui-event-key="/about"
-              disabled=""
               href="/about"
             >
               s_about

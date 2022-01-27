@@ -35,7 +35,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/b9c559e2cdd6e8d3.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/b9c559e2cdd6e8d3.jpg"
                 />
               </div>
               <div
@@ -78,7 +78,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/b673f71ca97afdcf.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/b673f71ca97afdcf.jpg"
                 />
               </div>
               <div
@@ -123,7 +123,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/d9093d663fb67db6.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/d9093d663fb67db6.jpg"
                 />
               </div>
               <div
@@ -168,7 +168,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/1b5e007272220edb.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/1b5e007272220edb.jpg"
                 />
               </div>
               <div
@@ -211,7 +211,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/91daf6e9e0dc99fd.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/91daf6e9e0dc99fd.jpg"
                 />
               </div>
               <div
@@ -254,7 +254,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/84bcd953b6cb9785.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/84bcd953b6cb9785.jpg"
                 />
               </div>
               <div
@@ -297,7 +297,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/6b6f318eb9701310.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/6b6f318eb9701310.jpg"
                 />
               </div>
               <div
@@ -340,7 +340,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/90ed7af297c625fb.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/90ed7af297c625fb.jpg"
                 />
               </div>
               <div
@@ -394,7 +394,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/826c55aebf4647dc.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/826c55aebf4647dc.jpg"
                 />
               </div>
               <div
@@ -439,7 +439,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/e29b594d3a24e099.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/e29b594d3a24e099.jpg"
                 />
               </div>
               <div
@@ -482,7 +482,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/4b635e63a0cadfe8.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/4b635e63a0cadfe8.jpg"
                 />
               </div>
               <div
@@ -525,7 +525,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/7912ec4e83a3052d.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/7912ec4e83a3052d.jpg"
                 />
               </div>
               <div
@@ -568,7 +568,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/a9665f2a2e842c63.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/a9665f2a2e842c63.jpg"
                 />
               </div>
               <div
@@ -611,7 +611,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/447a750ec8444c4e.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/447a750ec8444c4e.jpg"
                 />
               </div>
               <div
@@ -654,7 +654,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/8ff823e0456788f7.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/8ff823e0456788f7.jpg"
                 />
               </div>
               <div
@@ -697,7 +697,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/d23aa027ba4470d5.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/d23aa027ba4470d5.jpg"
                 />
               </div>
               <div
@@ -740,7 +740,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/03613de1d21e6547.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/03613de1d21e6547.jpg"
                 />
               </div>
               <div
@@ -783,7 +783,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/f20a51c0eee81314.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/f20a51c0eee81314.jpg"
                 />
               </div>
               <div
@@ -826,7 +826,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/6a49d02b089a1fcd.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/6a49d02b089a1fcd.jpg"
                 />
               </div>
               <div
@@ -869,7 +869,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/a17cab4f257a4a5e.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/a17cab4f257a4a5e.jpg"
                 />
               </div>
               <div
@@ -912,7 +912,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/ee23677ee816de42.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/ee23677ee816de42.jpg"
                 />
               </div>
               <div
@@ -955,7 +955,7 @@ exports[`Component displays correctly with correct data 1`] = `
                 <img
                   alt="bollard"
                   class="img-preview"
-                  src="/static/img/bollards_icon/4a7009e8ef06e824.jpg"
+                  src="http://localhost:5000/static/img/bollards_icon/4a7009e8ef06e824.jpg"
                 />
               </div>
               <div
