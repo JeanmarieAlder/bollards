@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import CustomCookieConsent from './components/shared/cookies/CustomCookieConsent';
 import Header from './Header';
 import AboutPage from './pages/AboutPage';
 import DetailsPage from './pages/DetailsPage';
@@ -24,6 +25,7 @@ function App() {
                     <Route path={['/home', '/list', '/']} component={HomePage} />
                 </Switch>
             </main>
+            <CustomCookieConsent></CustomCookieConsent>
             
         </div>
     );

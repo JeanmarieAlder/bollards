@@ -134,6 +134,39 @@ exports[`App displays correctly 1`] = `
         />
       </div>
     </main>
+    <div
+      class="cookie-consent-div"
+    >
+      <div
+        class="CookieConsent"
+        style="align-items: baseline; background: rgb(225, 237, 227); color: rgb(0, 0, 0); display: flex; flex-wrap: wrap; justify-content: space-between; left: 0px; position: fixed; width: 100%; z-index: 999; bottom: 0px;"
+      >
+        <div
+          class=""
+          style="flex: 1 0 300px; margin: 15px;"
+        >
+          s_cookies_policy_banner_text
+          <button
+            class="btn btn-link"
+            type="button"
+          >
+            s_cookies_policy
+          </button>
+        </div>
+        <div
+          class=""
+        >
+          <button
+            aria-label="Accept cookies"
+            class=""
+            id="rcc-confirm-button"
+            style="background: rgb(255, 212, 45); border: 0px; border-radius: 0px; box-shadow: none; color: rgb(0, 0, 0); cursor: pointer; flex: 0 0 auto; padding: 5px 10px; margin: 15px; font-size: 13px;"
+          >
+            I agree.
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -272,6 +305,39 @@ exports[`App displays correctly with details route 1`] = `
         />
       </div>
     </main>
+    <div
+      class="cookie-consent-div"
+    >
+      <div
+        class="CookieConsent"
+        style="align-items: baseline; background: rgb(225, 237, 227); color: rgb(0, 0, 0); display: flex; flex-wrap: wrap; justify-content: space-between; left: 0px; position: fixed; width: 100%; z-index: 999; bottom: 0px;"
+      >
+        <div
+          class=""
+          style="flex: 1 0 300px; margin: 15px;"
+        >
+          s_cookies_policy_banner_text
+          <button
+            class="btn btn-link"
+            type="button"
+          >
+            s_cookies_policy
+          </button>
+        </div>
+        <div
+          class=""
+        >
+          <button
+            aria-label="Accept cookies"
+            class=""
+            id="rcc-confirm-button"
+            style="background: rgb(255, 212, 45); border: 0px; border-radius: 0px; box-shadow: none; color: rgb(0, 0, 0); cursor: pointer; flex: 0 0 auto; padding: 5px 10px; margin: 15px; font-size: 13px;"
+          >
+            I agree.
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -530,6 +596,39 @@ exports[`App displays correctly with map route 1`] = `
         </div>
       </div>
     </main>
+    <div
+      class="cookie-consent-div"
+    >
+      <div
+        class="CookieConsent"
+        style="align-items: baseline; background: rgb(225, 237, 227); color: rgb(0, 0, 0); display: flex; flex-wrap: wrap; justify-content: space-between; left: 0px; position: fixed; width: 100%; z-index: 999; bottom: 0px;"
+      >
+        <div
+          class=""
+          style="flex: 1 0 300px; margin: 15px;"
+        >
+          s_cookies_policy_banner_text
+          <button
+            class="btn btn-link"
+            type="button"
+          >
+            s_cookies_policy
+          </button>
+        </div>
+        <div
+          class=""
+        >
+          <button
+            aria-label="Accept cookies"
+            class=""
+            id="rcc-confirm-button"
+            style="background: rgb(255, 212, 45); border: 0px; border-radius: 0px; box-shadow: none; color: rgb(0, 0, 0); cursor: pointer; flex: 0 0 auto; padding: 5px 10px; margin: 15px; font-size: 13px;"
+          >
+            I agree.
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
