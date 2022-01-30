@@ -13,6 +13,8 @@ const ImageCarousel = ({images}) => {
             infiniteLoop={true}
             interval={8000} 
             stopOnHover={false}
+            preventMovementUntilSwipeScrollTolerance={true}
+            swipeScrollTolerance={30}
             >
                 
             {
