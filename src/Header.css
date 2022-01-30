@@ -11,3 +11,16 @@
 .dropdown-menu {
     z-index: 99999;
 }
+
+.skip-nav-link {
+    background: lightgreen;
+    padding: 0.5rem 1.5rem;
+    border-radius: .25rem;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: ease-in .2s;
+}
+
+.skip-nav-link:focus {
+    transform: translateY(150%);
+}

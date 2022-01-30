@@ -17,6 +17,12 @@ exports[`App displays correctly 1`] = `
         >
           bollards.ch
         </a>
+        <a
+          class="skip-nav-link"
+          href="#main-content"
+        >
+          Skip navigation
+        </a>
         <button
           aria-controls="basic-navbar-nav"
           aria-label="Toggle navigation"
@@ -93,6 +99,7 @@ exports[`App displays correctly 1`] = `
     </nav>
     <main
       class="container"
+      id="main-content"
       role="main"
     >
       <div
@@ -101,12 +108,12 @@ exports[`App displays correctly 1`] = `
         <div
           id="home-page-title-div"
         >
-          <p
+          <img
+            alt="bollards.ch logo"
             class="home-page-title fade-in"
             id="home-page-title"
-          >
-            bollards.ch
-          </p>
+            src="big-logo-transparent.PNG"
+          />
         </div>
         <div
           class="map-link-div"
@@ -188,6 +195,12 @@ exports[`App displays correctly with details route 1`] = `
         >
           bollards.ch
         </a>
+        <a
+          class="skip-nav-link"
+          href="#main-content"
+        >
+          Skip navigation
+        </a>
         <button
           aria-controls="basic-navbar-nav"
           aria-label="Toggle navigation"
@@ -264,6 +277,7 @@ exports[`App displays correctly with details route 1`] = `
     </nav>
     <main
       class="container"
+      id="main-content"
       role="main"
     >
       <div
@@ -272,12 +286,12 @@ exports[`App displays correctly with details route 1`] = `
         <div
           id="home-page-title-div"
         >
-          <p
+          <img
+            alt="bollards.ch logo"
             class="home-page-title fade-in"
             id="home-page-title"
-          >
-            bollards.ch
-          </p>
+            src="big-logo-transparent.PNG"
+          />
         </div>
         <div
           class="map-link-div"
@@ -359,6 +373,12 @@ exports[`App displays correctly with map route 1`] = `
         >
           bollards.ch
         </a>
+        <a
+          class="skip-nav-link"
+          href="#main-content"
+        >
+          Skip navigation
+        </a>
         <button
           aria-controls="basic-navbar-nav"
           aria-label="Toggle navigation"
@@ -435,6 +455,7 @@ exports[`App displays correctly with map route 1`] = `
     </nav>
     <main
       class="container"
+      id="main-content"
       role="main"
     >
       <div>

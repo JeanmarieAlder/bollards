@@ -7,6 +7,8 @@ import imgMapLink from "../assets/img/map_link.png"
 import "./HomePage.css";
 import { Link } from 'react-router-dom';
 
+import logoImage from "../assets/logo/big-logo-transparent.PNG"
+
 const HomePage = () => {
 
     const [bollardsList, setBollardsList] = useState([]);
@@ -44,7 +46,7 @@ const HomePage = () => {
     return (
         <div className='home-page-div'>
             <div id="home-page-title-div">
-                <p id="home-page-title" className={"home-page-title " + showTitle} >bollards.ch</p>
+                <img id="home-page-title" src={logoImage} alt="bollards.ch logo" className={"home-page-title " + showTitle} ></img>
             </div>
             <div className="map-link-div">
                 <Link to={`/map`}>

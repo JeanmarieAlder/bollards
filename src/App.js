@@ -16,7 +16,7 @@ function App() {
                 <Route path={'/details'} component={() => <Header fixed='' />} />
                 <Route path={'/'} component={() => <Header fixed='top' />} />
             </Switch>
-            <main role="main" className="container">
+            <main id="main-content" role="main" className="container">
                 <Switch>
                     <Route path='/map' component={MapPage} />
                     <Route path='/details/:bollard_id' component={DetailsPage} />

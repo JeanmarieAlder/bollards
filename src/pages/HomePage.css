@@ -8,11 +8,8 @@
 }
 
 .home-page-title {
-    height: 30px;
-    height: 9vw;
-    font-size: 30px;
-    font-size: 10vw;
-    font-family: Kalam;
+    max-width: 100%;
+    max-height: 100%;
     opacity: 1;
     transition: 1s all ease;
     will-change: opacity;

@@ -34,6 +34,7 @@ const Header = ({fixed}) => {
                 <LinkContainer to="/home" onClick={() => onClickToList()}>
                     <Navbar.Brand>bollards.ch</Navbar.Brand>
                 </LinkContainer>
+                <a className="skip-nav-link" href="#main-content">Skip navigation</a>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
