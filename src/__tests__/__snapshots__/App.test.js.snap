@@ -21,7 +21,7 @@ exports[`App displays correctly 1`] = `
           class="skip-nav-link"
           href="#main-content"
         >
-          Skip navigation
+          s_skip_nav
         </a>
         <button
           aria-controls="basic-navbar-nav"
@@ -108,12 +108,11 @@ exports[`App displays correctly 1`] = `
         <div
           id="home-page-title-div"
         >
-          <img
-            alt="bollards.ch logo"
-            class="home-page-title fade-in"
-            id="home-page-title"
-            src="big-logo-transparent.PNG"
-          />
+          <h1
+            class="title-text"
+          >
+            Bollards.ch
+          </h1>
         </div>
         <div
           class="map-link-div"
@@ -199,7 +198,7 @@ exports[`App displays correctly with details route 1`] = `
           class="skip-nav-link"
           href="#main-content"
         >
-          Skip navigation
+          s_skip_nav
         </a>
         <button
           aria-controls="basic-navbar-nav"
@@ -286,12 +285,11 @@ exports[`App displays correctly with details route 1`] = `
         <div
           id="home-page-title-div"
         >
-          <img
-            alt="bollards.ch logo"
-            class="home-page-title fade-in"
-            id="home-page-title"
-            src="big-logo-transparent.PNG"
-          />
+          <h1
+            class="title-text"
+          >
+            Bollards.ch
+          </h1>
         </div>
         <div
           class="map-link-div"
@@ -377,7 +375,7 @@ exports[`App displays correctly with map route 1`] = `
           class="skip-nav-link"
           href="#main-content"
         >
-          Skip navigation
+          s_skip_nav
         </a>
         <button
           aria-controls="basic-navbar-nav"

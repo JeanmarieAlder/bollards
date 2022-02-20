@@ -7,19 +7,12 @@ import imgMapLink from "../assets/img/map_link.png"
 import "./HomePage.css";
 import { Link } from 'react-router-dom';
 
-import logoImage from "../assets/logo/big-logo-transparent.PNG"
-
 const HomePage = () => {
 
     const [bollardsList, setBollardsList] = useState([]);
     const [searchField, setSearchField] = useState('');
-    const [showTitle, setShowTitle] = useState('fade-in')
-
     useEffect(() => {
         fetchDataApi('bollards/list', setBollardsList);
-        setTimeout(() => {
-            setShowTitle('');
-        }, 100);
     }, [])
 
     const onSearchInput = (event) => {
@@ -46,7 +39,7 @@ const HomePage = () => {
     return (
         <div className='home-page-div'>
             <div id="home-page-title-div">
-                <img id="home-page-title" src={logoImage} alt="bollards.ch logo" className={"home-page-title " + showTitle} ></img>
+                <h1 className="title-text">Bollards.ch</h1>
             </div>
             <div className="map-link-div">
                 <Link to={`/map`}>
