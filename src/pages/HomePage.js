@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import BollardCardList from "../list/BollardCardList"
 import BollardCardListFiltered from "../list/BollardCardListFiltered"
 import SearchBox from "../list/SearchBox"
+import HomeCarousel from "../components/home/HomeCarousel"
 import { fetchDataApi } from '../utils/FetchData';
 import imgMapLink from "../assets/img/map_link.png";
 import "./HomePage.css";
@@ -40,6 +41,9 @@ const HomePage = () => {
         <div className='home-page-div'>
             <div id="home-page-title-div">
                 <h1 className="title-text">Bollards.ch</h1>
+            </div>
+            <div className="home-carousel">
+                <HomeCarousel></HomeCarousel>
             </div>
             <div className="map-link-div">
                 <Link to={`/map`}>
