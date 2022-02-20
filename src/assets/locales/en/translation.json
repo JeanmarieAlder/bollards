@@ -3,7 +3,6 @@
   "s_map": "Map",
   "s_news": "News",
   "s_about": "About",
-  "s_contact": "Contact",
   "s_expand": "Expand",
   "s_Forest": "Forest",
   "s_Fields": "Fields",
@@ -15,5 +14,9 @@
   "s_satellite": "Satellite",
   "s_cookies_policy": "Cookies policy",
   "s_cookies_policy_banner_text": "This website uses cookies to enhance your experience. ",
-  "s_skip_nav": "Skip Navigation"
+  "s_skip_nav": "Skip Navigation",
+  "s_build_number":"Build number",
+  "s_created_by": "Created by",
+  "s_contact_email": "Contact email",
+  "s_about_paragraph": "Thank you for visiting bollards.ch. This website has been developed using React under the MIT lisence."
 }

@@ -51,9 +51,6 @@ const Header = ({fixed}) => {
                 <Nav className="justify-content-end">
                     <LinkContainer to="/about" onClick={() => setExpanded(false)}>
                             <Nav.Link>{t("s_about")}</Nav.Link>
-                    </LinkContainer> 
-                    <LinkContainer to="/contact" onClick={() => setExpanded(false)}>
-                        <Nav.Link disabled>{t("s_contact")}</Nav.Link>
                     </LinkContainer>
                     <LanguageSelector></LanguageSelector> 
                     

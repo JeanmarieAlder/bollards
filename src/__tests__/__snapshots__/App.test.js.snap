@@ -72,14 +72,6 @@ exports[`App displays correctly 1`] = `
             >
               s_about
             </a>
-            <a
-              class="nav-link disabled"
-              data-rr-ui-event-key="/contact"
-              disabled=""
-              href="/contact"
-            >
-              s_contact
-            </a>
             <div
               class="nav-item dropdown"
             >
@@ -249,14 +241,6 @@ exports[`App displays correctly with details route 1`] = `
             >
               s_about
             </a>
-            <a
-              class="nav-link disabled"
-              data-rr-ui-event-key="/contact"
-              disabled=""
-              href="/contact"
-            >
-              s_contact
-            </a>
             <div
               class="nav-item dropdown"
             >
@@ -425,14 +409,6 @@ exports[`App displays correctly with map route 1`] = `
               href="/about"
             >
               s_about
-            </a>
-            <a
-              class="nav-link disabled"
-              data-rr-ui-event-key="/contact"
-              disabled=""
-              href="/contact"
-            >
-              s_contact
             </a>
             <div
               class="nav-item dropdown"
