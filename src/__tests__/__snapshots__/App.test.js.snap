@@ -115,7 +115,7 @@ exports[`App displays correctly 1`] = `
             <img
               alt="map-link"
               class="map-link-image"
-              src="map_link.png"
+              src="map_link.jpg"
             />
           </a>
         </div>
@@ -284,7 +284,7 @@ exports[`App displays correctly with details route 1`] = `
             <img
               alt="map-link"
               class="map-link-image"
-              src="map_link.png"
+              src="map_link.jpg"
             />
           </a>
         </div>
