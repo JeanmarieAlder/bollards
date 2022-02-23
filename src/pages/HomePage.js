@@ -3,7 +3,7 @@ import BollardCardList from "../list/BollardCardList"
 import BollardCardListFiltered from "../list/BollardCardListFiltered"
 import SearchBox from "../list/SearchBox"
 import { fetchDataApi } from '../utils/FetchData';
-import imgMapLink from "../assets/img/map_link.png";
+import imgMapLink from "../assets/img/map_link.jpg";
 import "./HomePage.css";
 import { Link } from 'react-router-dom';
 
