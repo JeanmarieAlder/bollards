@@ -42,44 +42,44 @@ build-project:
     - npm run build
     - echo "done..."
 
-deploy-job-staging:
-  image: alpine
-  stage: deploy
-  variables:
-    GIT_STRATEGY: none
-  cache: []
-  environment:
-    name: staging
-    url: https://$TEST_FRONTEND_URL
-  only:
-    - develop
-  before_script:
-    - echo "Alpine image loaded."
-  script:
-    - echo "Deploying application on development server..."
-    - chmod og= $TEST_ID_RSA # This is a requirement, they said...
-    - apk update && apk add openssh-client
-    - ssh -i $TEST_ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$TEST_SERVER_URL "cd /srv/bollards/bollards && git checkout src/pages/AboutPage.js && git pull"
-    - ssh -i $TEST_ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$TEST_SERVER_URL "sed -i 's/%%VERSION%%/$CI_COMMIT_SHORT_SHA/' /srv/bollards/bollards/src/pages/AboutPage.js"
-    - ssh -i $TEST_ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$TEST_SERVER_URL "cd /srv/bollards && docker-compose up -d --build nginx"
-    - echo "Application successfully deployed (Development)."
+# deploy-job-staging:
+#   image: alpine
+#   stage: deploy
+#   variables:
+#     GIT_STRATEGY: none
+#   cache: []
+#   environment:
+#     name: staging
+#     url: https://$TEST_FRONTEND_URL
+#   only:
+#     - develop
+#   before_script:
+#     - echo "Alpine image loaded."
+#   script:
+#     - echo "Deploying application on development server..."
+#     - chmod og= $TEST_ID_RSA # This is a requirement, they said...
+#     - apk update && apk add openssh-client
+#     - ssh -i $TEST_ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$TEST_SERVER_URL "cd /srv/bollards/bollards && git checkout src/pages/AboutPage.js && git pull"
+#     - ssh -i $TEST_ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$TEST_SERVER_URL "sed -i 's/%%VERSION%%/$CI_COMMIT_SHORT_SHA/' /srv/bollards/bollards/src/pages/AboutPage.js"
+#     - ssh -i $TEST_ID_RSA -o StrictHostKeyChecking=no $DEPLOYER_USER@$TEST_SERVER_URL "cd /srv/bollards && docker-compose up -d --build nginx"
+#     - echo "Application successfully deployed (Development)."
 
-test-staging-deployment:
-  image: alpine
-  stage: test-deployment
-  variables:
-    GIT_STRATEGY: none
-  cache: []
-  only:
-    - develop
-  before_script:
-    - echo "Alpine image loaded."
-  script:
-    - echo "Testing build $CI_COMMIT_SHORT_SHA on staging server."
-    - apk add --no-cache curl
-    - sleep 5
-    - curl -s "https://$TEST_FRONTEND_URL" | grep -q "Bollards - An Unbounded Bollard Experience"
-    - echo "Build $CI_COMMIT_SHORT_SHA is live on staging server."
+# test-staging-deployment:
+#   image: alpine
+#   stage: test-deployment
+#   variables:
+#     GIT_STRATEGY: none
+#   cache: []
+#   only:
+#     - develop
+#   before_script:
+#     - echo "Alpine image loaded."
+#   script:
+#     - echo "Testing build $CI_COMMIT_SHORT_SHA on staging server."
+#     - apk add --no-cache curl
+#     - sleep 5
+#     - curl -s "https://$TEST_FRONTEND_URL" | grep -q "Bollards - An Unbounded Bollard Experience"
+#     - echo "Build $CI_COMMIT_SHORT_SHA is live on staging server."
 
 
 deploy-job-production:
