@@ -1,24 +1,23 @@
 {
   "name": "bollards",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^5.1.0",
-    "i18next": "^20.6.1",
-    "i18next-browser-languagedetector": "^6.1.2",
-    "i18next-http-backend": "^1.3.1",
-    "leaflet": "^1.7.1",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.0.0-beta.6",
-    "react-cookie-consent": "^7.2.1",
-    "react-dom": "^17.0.2",
-    "react-i18next": "^11.12.0",
-    "react-leaflet": "^3.2.1",
-    "react-responsive-carousel": "^3.2.21",
-    "react-router-bootstrap": "^0.25.0",
-    "react-router-dom": "^5.2.1",
-    "react-scripts": "^4.0.3",
-    "web-vitals": "^1.1.2"
+    "bootstrap": "^5.3.2",
+    "i18next": "^23.7.11",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "i18next-http-backend": "^2.4.2",
+    "leaflet": "^1.9.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.2",
+    "react-cookie-consent": "^9.0.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.0",
+    "react-leaflet": "^4.2.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-bootstrap": "^0.26.2",
+    "react-router-dom": "^6.21.1",
+    "web-vitals": "^3.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,14 +37,18 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "react-test-renderer": "^17.0.2"
+    "@testing-library/jest-dom": "^6.1.6",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "react-scripts": "^5.0.1",
+    "react-test-renderer": "^18.2.0"
   },
   "jest": {
     "coveragePathIgnorePatterns": [
       "/src/Config.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@ngrx|(?!deck.gl)|ng-dynamic)"
     ]
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import CustomCookieConsent from './components/shared/cookies/CustomCookieConsent';
 import Header from './Header';
 import AboutPage from './pages/AboutPage';
@@ -11,19 +11,25 @@ import NewsPage from './pages/NewsPage';
 function App() {
     return (
         <div className='main-div'>
-            <Switch>
-                <Route path={'/map'} component={() => <Header fixed='' />} />
-                <Route path={'/details'} component={() => <Header fixed='' />} />
-                <Route path={'/'} component={() => <Header fixed='top' />} />
-            </Switch>
+            <Routes>
+                <Route path='/map' element={<Header fixed='' />} />
+                <Route path='/details/*' element={<Header fixed='' />} />
+                <Route path='/news' element={<Header fixed='top' />} />
+                <Route path='/about' element={<Header fixed='top' />} />
+                <Route path='/' element={<Header fixed='top' />} />
+                <Route path='/home' element={<Header fixed='top' />} />
+                <Route path='/list' element={<Header fixed='top' />} />
+            </Routes>
             <main id="main-content" role="main" className="container">
-                <Switch>
-                    <Route path='/map' component={MapPage} />
-                    <Route path='/details/:bollard_id' component={DetailsPage} />
-                    <Route path='/news' component={NewsPage} />
-                    <Route path='/about' component={AboutPage} />
-                    <Route path={['/home', '/list', '/']} component={HomePage} />
-                </Switch>
+                <Routes>
+                    <Route path='/map' element={<MapPage />} />
+                    <Route path='/details/:bollard_id' element={<DetailsPage />} />
+                    <Route path='/news' element={<NewsPage />} />
+                    <Route path='/about' element={<AboutPage />} />
+                    <Route path='/' element={<HomePage />} />
+                    <Route path='/home' element={<HomePage />} />
+                    <Route path='/list' element={<HomePage />} />
+                </Routes>
             </main>
             <CustomCookieConsent></CustomCookieConsent>
             
