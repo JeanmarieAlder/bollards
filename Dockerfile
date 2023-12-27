@@ -1,5 +1,5 @@
 ## Node part
-FROM node:16.7-alpine as build-stage
+FROM node:20.10.0-alpine as build-stage
 
 COPY package.json /bollards/package.json
 

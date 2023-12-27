@@ -4,7 +4,7 @@ stages:          # List of stages for jobs, and their order of execution
   - deploy
   - test-deployment
 
-image: node:16.7.0
+image: node:20.10.0
 
 variables:
   TEST_FRONTEND_URL: "bollards.wakxy.rocks"
