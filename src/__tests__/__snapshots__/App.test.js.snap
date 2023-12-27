@@ -78,6 +78,7 @@ exports[`App displays correctly 1`] = `
               <a
                 aria-expanded="false"
                 class="dropdown-toggle nav-link"
+                href="#"
                 id="basic-nav-dropdown"
                 role="button"
                 tabindex="0"
@@ -247,6 +248,7 @@ exports[`App displays correctly with details route 1`] = `
               <a
                 aria-expanded="false"
                 class="dropdown-toggle nav-link"
+                href="#"
                 id="basic-nav-dropdown"
                 role="button"
                 tabindex="0"
@@ -262,45 +264,7 @@ exports[`App displays correctly with details route 1`] = `
       class="container"
       id="main-content"
       role="main"
-    >
-      <div
-        class="home-page-div"
-      >
-        <div
-          id="home-page-title-div"
-        >
-          <h1
-            class="title-text"
-          >
-            Bollards.ch
-          </h1>
-        </div>
-        <div
-          class="map-link-div"
-        >
-          <a
-            href="/map"
-          >
-            <img
-              alt="map-link"
-              class="map-link-image"
-              src="map_link.jpg"
-            />
-          </a>
-        </div>
-        <div
-          class="search-box-div"
-        >
-          <input
-            placeholder="Search Bollards"
-            type="search"
-          />
-        </div>
-        <div
-          class="p-2 card-container row text-center justify-content-center"
-        />
-      </div>
-    </main>
+    />
     <div
       class="cookie-consent-div"
     >
@@ -416,6 +380,7 @@ exports[`App displays correctly with map route 1`] = `
               <a
                 aria-expanded="false"
                 class="dropdown-toggle nav-link"
+                href="#"
                 id="basic-nav-dropdown"
                 role="button"
                 tabindex="0"
@@ -434,7 +399,7 @@ exports[`App displays correctly with map route 1`] = `
     >
       <div>
         <div
-          class="map-page-div leaflet-container leaflet-grab leaflet-touch-drag"
+          class="map-page-div leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
           style="position: relative;"
           tabindex="0"
         >
@@ -456,7 +421,6 @@ exports[`App displays correctly with map route 1`] = `
                   <img
                     alt=""
                     class="leaflet-tile"
-                    role="presentation"
                     src="https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.swissimage/default/current/3857/10/529/361.jpeg"
                     style="width: 256px; height: 256px; left: -206px; top: -227px;"
                   />
@@ -464,10 +428,10 @@ exports[`App displays correctly with map route 1`] = `
               </div>
             </div>
             <div
-              class="leaflet-pane leaflet-shadow-pane"
+              class="leaflet-pane leaflet-overlay-pane"
             />
             <div
-              class="leaflet-pane leaflet-overlay-pane"
+              class="leaflet-pane leaflet-shadow-pane"
             />
             <div
               class="leaflet-pane leaflet-marker-pane"
@@ -489,22 +453,32 @@ exports[`App displays correctly with map route 1`] = `
                 class="leaflet-control-zoom leaflet-bar leaflet-control"
               >
                 <a
+                  aria-disabled="false"
                   aria-label="Zoom in"
                   class="leaflet-control-zoom-in"
                   href="#"
                   role="button"
                   title="Zoom in"
                 >
-                  +
+                  <span
+                    aria-hidden="true"
+                  >
+                    +
+                  </span>
                 </a>
                 <a
+                  aria-disabled="false"
                   aria-label="Zoom out"
                   class="leaflet-control-zoom-out"
                   href="#"
                   role="button"
                   title="Zoom out"
                 >
-                  −
+                  <span
+                    aria-hidden="true"
+                  >
+                    −
+                  </span>
                 </a>
               </div>
             </div>
@@ -518,6 +492,7 @@ exports[`App displays correctly with map route 1`] = `
                 <a
                   class="leaflet-control-layers-toggle"
                   href="#"
+                  role="button"
                   title="Layers"
                 />
                 <section
@@ -528,29 +503,29 @@ exports[`App displays correctly with map route 1`] = `
                     class="leaflet-control-layers-base"
                   >
                     <label>
-                      <div>
+                      <span>
                         <input
                           class="leaflet-control-layers-selector"
-                          name="leaflet-base-layers_27"
+                          name="leaflet-base-layers_28"
                           type="radio"
                         />
                         <span>
                            s_map
                         </span>
-                      </div>
+                      </span>
                     </label>
                     <label>
-                      <div>
+                      <span>
                         <input
                           checked="checked"
                           class="leaflet-control-layers-selector"
-                          name="leaflet-base-layers_27"
+                          name="leaflet-base-layers_28"
                           type="radio"
                         />
                         <span>
                            s_satellite
                         </span>
-                      </div>
+                      </span>
                     </label>
                   </div>
                   <div
@@ -574,11 +549,17 @@ exports[`App displays correctly with map route 1`] = `
               >
                 <a
                   href="https://leafletjs.com"
-                  title="A JS library for interactive maps"
+                  title="A JavaScript library for interactive maps"
                 >
                   Leaflet
                 </a>
-                 | © Data: 
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  |
+                </span>
+                 © Data: 
                 <a
                   href="https://www.swisstopo.admin.ch/en/home.html"
                 >
