@@ -98,7 +98,7 @@ exports[`Component displays correctly 1`] = `
         class="leaflet-control"
       >
         <a
-          href="/map?zoom=15&lat=46.12&lng=7.12"
+          href="/map?zoom=15&lat=46.12&lon=7.12"
         >
           <button
             class="map-expand-button btn btn-dark"
