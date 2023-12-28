@@ -23,7 +23,7 @@ const CustomMapButton = () => {
     return (
         <div className={"topright leaflet-top leaflet-right"} style={{height: "80px", width: "200px"}} >
             <div className={"leaflet-control"}>
-                <Link to={`/map?zoom=${zoomLevel}&lat=${latLng.lat}&lng=${latLng.lng}`}>
+                <Link to={`/map?zoom=${zoomLevel}&lat=${latLng.lat}&lon=${latLng.lng}`}>
                 <Button 
                     id="expand-map-button" 
                     variant="dark" 

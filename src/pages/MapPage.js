@@ -13,7 +13,7 @@ const MapPage = () => {
     let query = useQuery();
     let mapCenter = [
         query.get('lat') || '46.586',
-        query.get('lng') || '6.26'
+        query.get('lon') || '6.26'
     ]
     let mapZoom = query.get('zoom') || 10;
 
