@@ -18,5 +18,6 @@
   "s_build_number": "Numéro de build",
   "s_created_by": "Créé par",
   "s_contact_email": "Email de contact",
-  "s_about_paragraph": "Merci de visiter bollards.ch. Ce site a été développé avec React sous la license open source MIT."
+  "s_about_paragraph": "Merci de visiter bollards.ch. Ce site a été développé avec React sous la license open source MIT.",
+  "s_stop_auto_scroll": "Scroll Automatique Désactivé"
 }

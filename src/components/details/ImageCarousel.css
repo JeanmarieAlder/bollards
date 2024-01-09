@@ -1,22 +1,55 @@
-.carousel-image-div {
+.carousel-container {
+    position: relative;
+  }
+  
+  .carousel-image-div {
     background-color: #e1ede3;
     border-radius: 15px;
     overflow: hidden;
     max-width: 100%;
     max-height: calc(100vh - 60px);
-}
-
-.carousel-image {
+  }
+  
+  .carousel-image {
     max-width: 100%;
     max-height: calc(100vh - 60px);
-}
-
-.carousel .slide img {
+  }
+  
+  .carousel .slide img {
     width: auto;
     vertical-align: top;
     border: 0;
-}
-
-.thumbs-wrapper {
+  }
+  
+  .thumbs-wrapper {
     text-align: center;
-}
+  }
+  
+  .pause-symbol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5); /* White half transparent background */
+    padding: 10px; /* Padding around the text */
+    border-radius: 10px; /* Border radius */
+    opacity: 1; /* Initial opacity */
+    transition: opacity 4s ease-in-out; /* Fade out over 2 seconds */
+  }
+  
+  /* Optional: Add a keyframe animation for a smoother fade effect */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .pause-symbol.fade-out {
+    animation: fadeOut 4s ease-in-out;
+  }
+  

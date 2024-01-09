@@ -18,5 +18,6 @@
   "s_build_number":"Build number",
   "s_created_by": "Created by",
   "s_contact_email": "Contact email",
-  "s_about_paragraph": "Thank you for visiting bollards.ch. This website has been developed using React under the MIT lisence."
+  "s_about_paragraph": "Thank you for visiting bollards.ch. This website has been developed using React under the MIT lisence.",
+  "s_stop_auto_scroll": "Auto Scroll Disabled"
 }
