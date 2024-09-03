@@ -11,14 +11,20 @@ const languageMap = {
 
 const LanguageSelector = () => {
     const location = useLocation();
-    const [selected, setSelected] = useState(localStorage.getItem("i18nextLng") || "fr");
+    // Ensure selected is a valid language key
+    const getInitialLanguage = () => {
+        const storedLanguage = localStorage.getItem("i18nextLng");
+        return languageMap[storedLanguage] ? storedLanguage : "fr"; // Default to "fr" if storedLanguage is invalid
+    };
+
+    const [selected, setSelected] = useState(getInitialLanguage());
 
     // Change text dirrection (if needed, e.g. arab is rtl)
     useEffect(() => {
         document.body.dir = languageMap[selected].dir;
     }, [selected]);
     return (
-        <NavDropdown title={languageMap[selected].label} id="basic-nav-dropdown">
+        <NavDropdown title={languageMap[selected].label || "fr"} id="basic-nav-dropdown">
         {
             Object.keys(languageMap).map((lang, i) => {
                 return (
